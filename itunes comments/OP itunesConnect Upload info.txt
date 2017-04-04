@@ -1,0 +1,15 @@
+
+
+Payment information is asked of the user so money can be sent or received. Money is exchanged for the information provided regarding a soon-to-be available parking spot. Users providing information will need a means of receiving payment, and users requesting information will need a means of sending payment. Since a user can both post and request parking information, they have the option to enter both an account for receiving and a credit or debit card for sending.
+
+The transfer of funds is based entirely around this exchange of parking information and location. The transfer of funds can only be initiated by the user requesting the information. This protects the user by being able to confirm the parking information and location is valid.
+
+Payment system is in production mode. Any credit cards or funding sources added are real cards/accounts. We offer the option to request or post spots for $0. Users do not need to have payment info added, and so, the $0 option will not transfer any money.
+
+Please test the system by posting or requesting a spot for $0 to test.
+Alternatively, use the accounts (user: kostas pass: qwerty) and (user: keith pass: qwerty) to test the system for more than $0. 
+
+Cities who do not allow this service are excluded from the system’s map.  If someone tries to post, for example, in Boston, an alert will warn that “the service is unavailable in this city”.  
+
+A user can be suspended. If a user receives more than 3 "no" feedbacks from other users, the account is suspended. For example, please try suspended user ken (username: ken password: qwerty). An alert will warn that “This account has been suspended”.
+

@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "1927057AA040E658AB28ED9F84C417E36EBFF2AC",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "94C988AAAB00F0A52F6BC2CAC315294EC84E06F4" : 0,
+    "2380D9741C0D409D6E680A93061B167559582F89" : 0,
+    "1927057AA040E658AB28ED9F84C417E36EBFF2AC" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A08B7D89-0F18-4463-9504-FF8445DEEBFB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "94C988AAAB00F0A52F6BC2CAC315294EC84E06F4" : "",
+    "2380D9741C0D409D6E680A93061B167559582F89" : "OrganicParking",
+    "1927057AA040E658AB28ED9F84C417E36EBFF2AC" : "OP_IOS\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Parking",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Parking.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/imkostas\/OP_IOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1927057AA040E658AB28ED9F84C417E36EBFF2AC"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/imkostas\/oParking.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2380D9741C0D409D6E680A93061B167559582F89"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/imkostas\/ZING.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "94C988AAAB00F0A52F6BC2CAC315294EC84E06F4"
+    }
+  ]
+}

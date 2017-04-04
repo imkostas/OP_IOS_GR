@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>About</key>
+	<dict>
+		<key>0</key>
+		<array>
+			<string>What is Organic Parking?</string>
+			<string>Organic Parking is a mobile app that allows users to exchange information about public or private parking spaces.  It will help facilitate a better city driving and parking experience.</string>
+		</array>
+		<key>1</key>
+		<array>
+			<string>What platforms is the app available?</string>
+			<string>Organic Parking is currently available on any Android- and iOS-run devices. Our goal is to make it available to as many users as possible.</string>
+		</array>
+		<key>2</key>
+		<array>
+			<string>How do I request a spot?</string>
+			<string>Simply tap on a pin of the spot you want and send a request.</string>
+		</array>
+		<key>3</key>
+		<array>
+			<string>How do I post a spot?</string>
+			<string>Press and hold your finger on the map until the &quot;post here&quot; icon appears. Move the map to the desired location and select &quot;post here&quot;. Provide the date and time the spot will be available.  Set your price.  Give any aditional details. Post your spot and wait for someone to send you a request.</string>
+		</array>
+		<key>4</key>
+		<array>
+			<string>What do the different pins mean?</string>
+			<string>Blue pins with a dollar amount show available spots; a Pink pin is the spot you posted; and, a pin with a car image show you are in agreement.</string>
+		</array>
+		<key>5</key>
+		<array>
+			<string>What kinds of restrictions on parking are indicated in the app?</string>
+			<string>The poster of the spot is asked to show whether it is a metered, permit only, time limited, or unrestricted spot.  But it is the responsibility of the driver to use the parking space legally, such as, by feeding the parking meter, having a parking permit, or observing the time limits.</string>
+		</array>
+	</dict>
+	<key>Payment</key>
+	<dict>
+		<key>0</key>
+		<array>
+			<string>How do I get paid?</string>
+			<string>You get paid via your bank or venmo account. Funds may take up to 72 hours to be transferred</string>
+		</array>
+		<key>1</key>
+		<array>
+			<string>How do I pay?</string>
+			<string>You pay using a credit or debit card.  Organic Parking does not keep your credit card information.</string>
+		</array>
+		<key>2</key>
+		<array>
+			<string>What is venmo?</string>
+			<string>Venmo is a third party app which allows a poster to receive money easily and securely to you by entering an email or phone number.  We don&apos;t keep any access to your venmo account - we just need to know where to send the money to.</string>
+		</array>
+		<key>3</key>
+		<array>
+			<string>Why did I not receive my full posted value?</string>
+			<string>There is a fee of 2.9% of the posted value plus 30 cents applied to funds handled by the payment processing company.  Please see https://www.braintreepayments.com</string>
+		</array>
+		<key>4</key>
+		<array>
+			<string>Do I pay a commission to organic parking?</string>
+			<string>Organic Parking does not take a commission at this time.</string>
+		</array>
+	</dict>
+	<key>Support</key>
+	<dict>
+		<key>0</key>
+		<array>
+			<string>What do I do if I am running late?</string>
+			<string>Notify the poster via the chat immediately and try to rearrange the timing.</string>
+		</array>
+		<key>1</key>
+		<array>
+			<string>I requested a spot, but never received any response from the poster. What should I do?</string>
+			<string>Cancel your request and look for another spot on the map.</string>
+		</array>
+		<key>2</key>
+		<array>
+			<string>I&apos;m in another app. Can I still get messages?</string>
+			<string>No worries, Organic Parking alerts you by push notifications.</string>
+		</array>
+	</dict>
+</dict>
+</plist>
