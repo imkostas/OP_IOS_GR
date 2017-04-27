@@ -2952,7 +2952,7 @@
     if(![placemark.country isEqualToString:@"Greece"]){
         [MBProgressHUD hideHUDForView:self.view animated:YES];
         [self dismissedPostView];
-        [self customAlert:@"Το OPA λειτουργεί μόνον στην Ελλάδα" withDone:@"OΚ" withColor:YES withTag:0];
+        [self customAlert:@"OPA works only in Greece" withDone:@"OΚ" withColor:YES withTag:0];
         return;
     }
     
