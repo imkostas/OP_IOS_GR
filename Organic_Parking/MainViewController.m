@@ -2949,10 +2949,10 @@
 
 - (void)validateAddress:(CLPlacemark *)placemark {
     
-    if(![placemark.country isEqualToString:@"United States"]){
+    if(![placemark.country isEqualToString:@"Greece"]){
         [MBProgressHUD hideHUDForView:self.view animated:YES];
         [self dismissedPostView];
-        [self customAlert:@"Organic Parking is currently only available in the United States of America" withDone:@"Ok" withColor:YES withTag:0];
+        [self customAlert:@"Το OPA λειτουργεί μόνον στην Ελλάδα" withDone:@"OΚ" withColor:YES withTag:0];
         return;
     }
     

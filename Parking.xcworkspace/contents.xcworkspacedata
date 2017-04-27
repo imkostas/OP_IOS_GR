@@ -5,6 +5,6 @@
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Parking.xcodeproj">
+      location = "group:/Users/imkostas/Desktop/CODE/OP_IOS_GR/OPA.xcodeproj">
    </FileRef>
 </Workspace>

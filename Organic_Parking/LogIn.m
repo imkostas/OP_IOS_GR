@@ -14,7 +14,7 @@ typedef NS_ENUM(NSUInteger, LogInLayoutState) {
     LogInLayoutStateLogoCentered,
     LogInLayoutStateLogoShiftedUp
 };
-
+//
 // Enumeration of keyboard states, either visible or hidden. This is used to position the UI elements according
 // to the keyboard's position
 typedef NS_ENUM(NSUInteger, KeyboardState) {
