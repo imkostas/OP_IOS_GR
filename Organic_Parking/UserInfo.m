@@ -144,8 +144,8 @@
         showTerms = true;
         
         //Server request paths
-        uri = @"https://api.organicparking.com/v1/";
-        img_uri = @"https://api.organicparking.com/user_profile_images/";
+        uri = @"https://api.organicparking.com/v1/Greece/";
+        img_uri = @"https://api.organicparking.com/user_profile_images_gr/";
         apiKey = @"OPyINqtiXfEMP5qYVEJ0Cj.61XHplL0gb6eQB6TWp9JsLndxmdMDLW";
         geocoding_uri = @"https://maps.googleapis.com/maps/api/geocode/json?address=";
         

@@ -95,6 +95,7 @@
 		31307E7B179450B50029F7D8 /* LogIn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogIn.m; sourceTree = "<group>"; };
 		31622FD317AAA65200E3E425 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		317189671B7402CD00FB856B /* MainStoryboard_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		317193F41EC6DA9F00D4C494 /* OPA.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OPA.entitlements; sourceTree = "<group>"; };
 		31D0B4ED1E8C566D00DF0E2F /* Parking.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Parking.entitlements; sourceTree = "<group>"; };
 		4905FAAC1A1E8DB6009A9B9A /* DetailPaymentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailPaymentCell.h; sourceTree = "<group>"; };
 		4905FAAD1A1E8DB6009A9B9A /* DetailPaymentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailPaymentCell.m; sourceTree = "<group>"; };
@@ -411,6 +412,7 @@
 		496590891785193E00287B3C = {
 			isa = PBXGroup;
 			children = (
+				317193F41EC6DA9F00D4C494 /* OPA.entitlements */,
 				31D0B4ED1E8C566D00DF0E2F /* Parking.entitlements */,
 				4965909B1785193E00287B3C /* Organic Parking */,
 				496590941785193E00287B3C /* Frameworks */,
@@ -1045,7 +1047,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = Parking.entitlements;
+				CODE_SIGN_ENTITLEMENTS = OPA.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -1087,7 +1089,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = Parking.entitlements;
+				CODE_SIGN_ENTITLEMENTS = OPA.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 7Z354MCLYK;

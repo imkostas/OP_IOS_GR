@@ -44,8 +44,10 @@
                                           self.view.frame.size.width, self.settingsBtn.frame.size.height)];
     [self.profileBtn setFrame:CGRectMake(self.profileBtn.frame.origin.x, self.profileBtn.frame.origin.y,
                                          self.view.frame.size.width, self.profileBtn.frame.size.height)];
+
     [self.paymentBtn setFrame:CGRectMake(self.paymentBtn.frame.origin.x, self.paymentBtn.frame.origin.y,
                                          self.view.frame.size.width, self.paymentBtn.frame.size.height)];
+
     [self.changePasswordBtn setFrame:CGRectMake(self.changePasswordBtn.frame.origin.x, self.changePasswordBtn.frame.origin.y,
                                                 self.view.frame.size.width, self.changePasswordBtn.frame.size.height)];
     [self.helpBtn setFrame:CGRectMake(self.helpBtn.frame.origin.x, self.helpBtn.frame.origin.y, self.view.frame.size.width,
@@ -69,6 +71,9 @@
                                        self.view.frame.size.width, self.divider1.frame.size.height)];
     [self.divider2 setFrame:CGRectMake(self.divider2.frame.origin.x, self.divider2.frame.origin.y,
                                        self.view.frame.size.width, self.divider2.frame.size.height)];
+    [self.divider2 setFrame:CGRectMake(self.divider2.frame.origin.x, self.divider2.frame.origin.y,
+                                       self.view.frame.size.width, 0)];
+
     [self.divider3 setFrame:CGRectMake(self.divider3.frame.origin.x, self.divider3.frame.origin.y,
                                        self.view.frame.size.width, self.divider3.frame.size.height)];
     [self.divider4 setFrame:CGRectMake(self.divider4.frame.origin.x, self.divider4.frame.origin.y,
@@ -99,7 +104,7 @@
     
     //initialize min and max for settings and help
     settings_min = 65.0f;
-    settings_max = 203.0f;
+    settings_max = 203.0f;  //157.0f
     help_min = 65.0f;
     help_max = 292.0f;
     

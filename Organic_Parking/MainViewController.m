@@ -731,12 +731,13 @@
     NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys:
                             [NSString stringWithFormat:@"%i", self.annotation.post_id], @"post_id",
                             self.user.apiKey, @"api_key", nil];
-    
+
     AFHTTPRequestOperationManager *manager =  [AFHTTPRequestOperationManager manager];
     [manager POST:[NSString stringWithFormat:@"%@sendPayment", self.user.uri] parameters:params
           success:^(AFHTTPRequestOperation *operation, id responseObject) {
               
-              NSLog(@"%@", responseObject);
+
+             NSLog(@"%@", responseObject);
               
               //hide HUD
               [MBProgressHUD hideHUDForView:self.view animated:YES];
@@ -2948,14 +2949,15 @@
 }
 
 - (void)validateAddress:(CLPlacemark *)placemark {
-    
+
+    /*//&&&&&&&&&
     if(![placemark.country isEqualToString:@"Greece"]){
         [MBProgressHUD hideHUDForView:self.view animated:YES];
         [self dismissedPostView];
         [self customAlert:@"OPA works only in Greece" withDone:@"OΚ" withColor:YES withTag:0];
         return;
     }
-    
+    */
     NSString * address = [NSString stringWithFormat:@"%@ %@", placemark.subThoroughfare, placemark.thoroughfare];
     NSString * city_region = [NSString stringWithFormat:@"%@, %@", placemark.locality, placemark.administrativeArea];
     
