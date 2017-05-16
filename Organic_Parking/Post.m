@@ -423,64 +423,50 @@
 
 - (IBAction)postMeter:(id)sender {
     
-    //if post already has meter, turn it off - otherwise, turn it on
-    if(postHasMeter){
-        
-        [self.postMeter setBackgroundImage:[UIImage imageNamed:@"Meter Inactive"] forState:UIControlStateNormal];
-        [self.meterLabel setTextColor:[UIColor colorWithRed:170/255.0f green:170/255.0f blue:170/255.0f alpha:1.0]];
-        postHasMeter = false;
-        postDetails -= 4;
-        
-    } else {
-        
+    //turn it on and everything else off
         [self.postMeter setBackgroundImage:[UIImage imageNamed:@"Meter Active"] forState:UIControlStateNormal];
         [self.meterLabel setTextColor:[UIColor colorWithRed:1.0f green:70/255.0f blue:98/255.0f alpha:1.0]];
-        postHasMeter = true;
-        postDetails += 4;
+        postDetails = 4;
         
-    }
+        [self.postPermit setBackgroundImage:[UIImage imageNamed:@"Permit Inactive"] forState:UIControlStateNormal];
+        [self.permitLabel setTextColor:[UIColor colorWithRed:170/255.0f green:170/255.0f blue:170/255.0f alpha:1.0]];
+
+        [self.postTimeLimit setBackgroundImage:[UIImage imageNamed:@"Time Inactive"] forState:UIControlStateNormal];
+        [self.timeLimitLabel setTextColor:[UIColor colorWithRed:170/255.0f green:170/255.0f blue:170/255.0f alpha:1.0]];
+
     
 }
 
 - (IBAction)postPermit:(id)sender {
     
-    //if post already has permit, turn it off - otherwise, turn it on
-    if(postHasPermit){
-        
-        [self.postPermit setBackgroundImage:[UIImage imageNamed:@"Permit Inactive"] forState:UIControlStateNormal];
-        [self.permitLabel setTextColor:[UIColor colorWithRed:170/255.0f green:170/255.0f blue:170/255.0f alpha:1.0]];
-        postHasPermit = false;
-        postDetails -= 2;
-        
-    } else {
-        
+    //turn it on and everything else off
+    
         [self.postPermit setBackgroundImage:[UIImage imageNamed:@"Permit Active"] forState:UIControlStateNormal];
         [self.permitLabel setTextColor:[UIColor colorWithRed:1.0f green:70/255.0f blue:98/255.0f alpha:1.0]];
-        postHasPermit = true;
-        postDetails += 2;
+        postDetails = 2;
         
-    }
+        [self.postMeter setBackgroundImage:[UIImage imageNamed:@"Meter Inactive"] forState:UIControlStateNormal];
+        [self.meterLabel setTextColor:[UIColor colorWithRed:170/255.0f green:170/255.0f blue:170/255.0f alpha:1.0]];
+
+        [self.postTimeLimit setBackgroundImage:[UIImage imageNamed:@"Time Inactive"] forState:UIControlStateNormal];
+        [self.timeLimitLabel setTextColor:[UIColor colorWithRed:170/255.0f green:170/255.0f blue:170/255.0f alpha:1.0]];
     
 }
 
 - (IBAction)postTimeLimit:(id)sender {
     
-    //if post alredy has time limit, turn it off - otherwise, turn it on
-    if(postHasTimeLimit){
-        
-        [self.postTimeLimit setBackgroundImage:[UIImage imageNamed:@"Time Inactive"] forState:UIControlStateNormal];
-        [self.timeLimitLabel setTextColor:[UIColor colorWithRed:170/255.0f green:170/255.0f blue:170/255.0f alpha:1.0]];
-        postHasTimeLimit = false;
-        postDetails -= 1;
-        
-    } else {
-        
+    //turn it on and everything else off
+    
         [self.postTimeLimit setBackgroundImage:[UIImage imageNamed:@"Time Active"] forState:UIControlStateNormal];
         [self.timeLimitLabel setTextColor:[UIColor colorWithRed:1.0f green:70/255.0f blue:98/255.0f alpha:1.0]];
-        postHasTimeLimit = true;
-        postDetails += 1;
+        postDetails = 1;
         
-    }
+        [self.postMeter setBackgroundImage:[UIImage imageNamed:@"Meter Inactive"] forState:UIControlStateNormal];
+        [self.meterLabel setTextColor:[UIColor colorWithRed:170/255.0f green:170/255.0f blue:170/255.0f alpha:1.0]];
+        
+        [self.postPermit setBackgroundImage:[UIImage imageNamed:@"Permit Inactive"] forState:UIControlStateNormal];
+        [self.permitLabel setTextColor:[UIColor colorWithRed:170/255.0f green:170/255.0f blue:170/255.0f alpha:1.0]];
+
     
 }
 
@@ -511,32 +497,36 @@
         [self noAccount];
         return;
     }
-    else if(!self.user.vehicle.hasVehicle) {
-        self.user.code = MISSING_VEHICLE;
-        MainViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"profileNavController"];
-        [self presentViewController:viewController animated:YES completion:nil];
-        return;
-    }
+//    else if(!self.user.vehicle.hasVehicle) {
+//        self.user.code = MISSING_VEHICLE;
+//        MainViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"profileNavController"];
+//        [self presentViewController:viewController animated:YES completion:nil];
+//        return;
+//    }
 
     //FREE POST (NO PAYMENT METHOD REQUIRED) IF PRICE IS 0
-   if([self.postPrice.text floatValue] == 0.){
-       ;
-    }
-   else if ( ( [self.user.braintree.subMerchant.status isEqual:[NSNull null]] ) && [self.postPrice.text floatValue] > 0.) {
-       self.user.code = MISSING_FUNDING_SOURCE;
-       MainViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"paymentNavController"];
-       [self presentViewController:viewController animated:YES completion:^{}];
-       [self dismissView];
-       return;
-   }
-    else if(![self.user.braintree.subMerchant.status isEqualToString:@"active"]) {
-        self.user.code = MISSING_FUNDING_SOURCE;
-        MainViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"paymentNavController"];
-        [self presentViewController:viewController animated:YES completion:^{}];
-        [self dismissView];
-        return;
-    }
+//   if([self.postPrice.text floatValue] == 0.){
+//       ;
+//    }
+//   else if ( ( [self.user.braintree.subMerchant.status isEqual:[NSNull null]] ) && [self.postPrice.text floatValue] > 0.) {
+//       self.user.code = MISSING_FUNDING_SOURCE;
+//       MainViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"paymentNavController"];
+//       [self presentViewController:viewController animated:YES completion:^{}];
+//       [self dismissView];
+//       return;
+//   }
+//    else if(![self.user.braintree.subMerchant.status isEqualToString:@"active"]) {
+//        self.user.code = MISSING_FUNDING_SOURCE;
+//        MainViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"paymentNavController"];
+//        [self presentViewController:viewController animated:YES completion:^{}];
+//        [self dismissView];
+//        return;
+//    }
 
+    if(postDetails <= 0){
+         [self customAlert:@"Your post needs a category" withDone:@"Ok"];
+        return;
+        }
 
     //check that post price is valid
     if([self isNumeric:self.postPrice.text]){

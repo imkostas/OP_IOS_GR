@@ -3423,28 +3423,28 @@
                                                     <action selector="postTimeLimit:" destination="RED-PD-qk2" eventType="touchUpInside" id="B8O-3N-4I5"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="meter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GQM-sa-at8">
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="car" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GQM-sa-at8">
                                                 <rect key="frame" x="40" y="99" width="80" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="16"/>
                                                 <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="permit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bmN-yh-nuW">
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="seat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bmN-yh-nuW">
                                                 <rect key="frame" x="120" y="99" width="80" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="16"/>
                                                 <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="time limit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="COf-St-p7m">
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="stand" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="COf-St-p7m">
                                                 <rect key="frame" x="200" y="99" width="80" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="16"/>
                                                 <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="select details about your spot" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pFI-nB-wIp">
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="select a category for your spot" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pFI-nB-wIp">
                                                 <rect key="frame" x="0.0" y="124" width="320" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="16"/>
@@ -4164,15 +4164,15 @@
         <image name="Logo Text" width="255" height="17"/>
         <image name="Menu" width="46" height="46"/>
         <image name="Menu Pressed" width="46" height="46"/>
-        <image name="Meter Blue" width="24" height="33"/>
-        <image name="Meter Inactive" width="60" height="66"/>
-        <image name="Meter Post Active" width="38" height="50"/>
+        <image name="Meter Blue" width="31" height="31"/>
+        <image name="Meter Inactive" width="60" height="60"/>
+        <image name="Meter Post Active" width="48" height="48"/>
         <image name="Midsize Blue" width="53" height="20"/>
         <image name="No Profile Image" width="137" height="137"/>
         <image name="Payment" width="22" height="14"/>
-        <image name="Permit Blue" width="25" height="33"/>
-        <image name="Permit Inactive" width="60" height="66"/>
-        <image name="Permit Post Active" width="38" height="50"/>
+        <image name="Permit Blue" width="31" height="31"/>
+        <image name="Permit Inactive" width="60" height="60"/>
+        <image name="Permit Post Active" width="48" height="48"/>
         <image name="Post_Background" width="357" height="200"/>
         <image name="Post_Background_Bottom" width="320" height="16"/>
         <image name="Profile" width="19" height="19"/>
@@ -4185,7 +4185,7 @@
         <image name="Star Pink" width="17" height="16"/>
         <image name="TIme Blue" width="31" height="31"/>
         <image name="Terms" width="17" height="21"/>
-        <image name="Time Inactive" width="60" height="66"/>
+        <image name="Time Inactive" width="60" height="60"/>
         <image name="Time Post Active" width="48" height="48"/>
         <image name="Title Bar" width="370" height="44"/>
         <image name="Top Bar" width="320" height="65"/>
