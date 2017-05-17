@@ -180,7 +180,7 @@
             [self.user.keychain setObject:[responseObject valueForKey:@"hash"] forKey:(__bridge id)(kSecValueData)];
             
             //notify user their password has been changed
-            [self customAlert:@"Your password has been changed" withDone:@"Ok"];
+            [self customAlert:@"Your password has been changed" withDone:@"OK"];
             [self.customAlert setTag:1];
             
         } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
@@ -197,7 +197,7 @@
                 
             } else {
                 
-                [self customAlert:@"Unable to change your password" withDone:@"Ok"];
+                [self customAlert:@"Unable to change your password" withDone:@"OK"];
                 
             }
             
@@ -212,22 +212,22 @@
     //check that current password not empty, both new passwords not empty, and that new passwords match
     if([[self.currentPassword.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet] ] length]==0) {
         
-        [self customAlert:@"Please enter your current password before continuing" withDone:@"Ok"];
+        [self customAlert:@"Please enter your current password before continuing" withDone:@"OK"];
         return false;
         
     } else if ([[self.profilePasswordNew.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet] ] length]==0) {
         
-        [self customAlert:@"Please enter your new password before continuing" withDone:@"Ok"];
+        [self customAlert:@"Please enter your new password before continuing" withDone:@"OK"];
         return false;
         
     } else if ([[self.confirmProfilePassword.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet] ] length]==0) {
         
-        [self customAlert:@"Please confirm your new password before continuing" withDone:@"Ok"];
+        [self customAlert:@"Please confirm your new password before continuing" withDone:@"OK"];
         return false;
         
     } else if(![self.profilePasswordNew.text isEqualToString:self.confirmProfilePassword.text]){
         
-        [self customAlert:@"New Password fields don't match" withDone:@"Ok"];
+        [self customAlert:@"New Password fields don't match" withDone:@"OK"];
         return false;
         
     }

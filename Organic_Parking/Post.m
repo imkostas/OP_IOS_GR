@@ -524,7 +524,7 @@
 //    }
 
     if(postDetails <= 0){
-         [self customAlert:@"Your post needs a category" withDone:@"Ok"];
+         [self customAlert:@"Your post needs a category" withDone:@"OK"];
         return;
         }
 
@@ -573,7 +573,7 @@
                       
                   } else {
                       
-                      [self customAlert:@"We were unable to post your spot" withDone:@"Ok"];
+                      [self customAlert:@"We were unable to post your spot" withDone:@"OK"];
                       
                   }
                   
@@ -586,7 +586,7 @@
         
     } else {
         
-        [self customAlert:@"Your post needs a price" withDone:@"Ok"];
+        [self customAlert:@"Your post needs a price" withDone:@"OK"];
         
     }
     

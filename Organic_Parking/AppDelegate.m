@@ -119,7 +119,7 @@
     self.user.device = @"";
     
     //notify user they should enable push notifications
-    [self customAlert:@"We recommend enabling push notifications. You can do this within Settings" withDone:@"Ok"];
+    [self customAlert:@"We recommend enabling push notifications. You can do this within Settings" withDone:@"OK"];
     
 }
 

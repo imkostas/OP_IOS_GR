@@ -252,7 +252,7 @@
                     
                     NSLog(@"%@", error);
                     
-                    [self customAlert:@"Search by location is currently unavailable" withDone:@"Ok"];
+                    [self customAlert:@"Search by location is currently unavailable" withDone:@"OK"];
                     
                 } else if (placemark) {
                     

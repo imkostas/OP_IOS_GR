@@ -215,7 +215,7 @@
 - (IBAction)venmoInfo:(id)sender {
     
     [self dismissKeyboards];
-    [self customAlert:@"Venmo is a third party app which allows posters to send money easily and securely to you by entering an email or phone number. None of your account information is stored on our system when using venmo." withDone:@"Ok" withTag:0];
+    [self customAlert:@"Venmo is a third party app which allows posters to send money easily and securely to you by entering an email or phone number. None of your account information is stored on our system when using venmo." withDone:@"OK" withTag:0];
     
 }
 
@@ -232,12 +232,12 @@
         
         if(self.routingNumber.text.length != 9){
             
-            [self customAlert:@"Your routing number must be 9 digits" withDone:@"Ok" withTag:0];
+            [self customAlert:@"Your routing number must be 9 digits" withDone:@"OK" withTag:0];
             return;
             
         } else if(self.accountNumber.text.length > 17 && self.accountNumber.text.length < 3) {
             
-            [self customAlert:@"Account numbers are 3 - 17 digit numbers" withDone:@"Ok" withTag:0];
+            [self customAlert:@"Account numbers are 3 - 17 digit numbers" withDone:@"OK" withTag:0];
             return;
             
         } else {
@@ -249,7 +249,7 @@
     } else {
         
         [self customAlert:@"You must first add either Venmo or bank account details before adding account"
-                 withDone:@"Ok" withTag:0];
+                 withDone:@"OK" withTag:0];
         return;
         
     }
@@ -287,7 +287,7 @@
               [MBProgressHUD hideHUDForView:self.view animated:YES];
               
               //Don't need backup since no server message is returned
-              [self customAlert:@"We were unable to process your funding source information" withDone:@"Ok" withTag:0];
+              [self customAlert:@"We were unable to process your funding source information" withDone:@"OK" withTag:0];
               
           }];
     

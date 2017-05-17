@@ -154,7 +154,7 @@
     //if coming from todo, notify user why this view has appeared
     if(self.user.code == MISSING_VEHICLE){
         
-        [self customAlert:@"You must add vehicle information to your profile before posting or requesting" withDone:@"Ok" withTag:0];
+        [self customAlert:@"You must add vehicle information to your profile before posting or requesting" withDone:@"OK" withTag:0];
         self.user.code = NO_MESSAGE;
         
     }
@@ -352,7 +352,7 @@
     //save only if all car info is empty or all car info is set
     if(([self.make.text isEqualToString:@""] || [self.model.text isEqualToString:@""] || [self.color.text isEqualToString:@"color"] || carSize == 0)) {
         
-        [self customAlert:@"You're missing some vehicle information" withDone:@"Ok" withTag:0];
+        [self customAlert:@"You're missing some vehicle information" withDone:@"OK" withTag:0];
         return NO;
         
     }
@@ -433,7 +433,7 @@
                   
                   self.user.vehicle = [[Vehicle alloc] initWithVehicle:[[[responseObject valueForKeyPath:@"vehicle"] valueForKey:@"id"] intValue] make:[[responseObject valueForKeyPath:@"vehicle"] valueForKey:@"make"] model:[[responseObject valueForKeyPath:@"vehicle"] valueForKey:@"model"] color:[[responseObject valueForKeyPath:@"vehicle"] valueForKey:@"color"] size:[[[responseObject valueForKeyPath:@"vehicle"] valueForKey:@"size"] intValue]];
                   
-                  [self customAlert:@"Your vehicle information has been updated" withDone:@"Ok" withTag:0];
+                  [self customAlert:@"Your vehicle information has been updated" withDone:@"OK" withTag:0];
                   
               } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
                   
@@ -451,7 +451,7 @@
                       
                   } else {
                       
-                      [self customAlert:@"Unable to update your vehicle information" withDone:@"Ok" withTag:0];
+                      [self customAlert:@"Unable to update your vehicle information" withDone:@"OK" withTag:0];
                       
                   }
                   
@@ -540,7 +540,7 @@
         }
         else {
             
-            [self customAlert:@"Your device is not capable of taking photos. Try choosing an existing image from your photo library." withDone:@"Ok" withTag:0];
+            [self customAlert:@"Your device is not capable of taking photos. Try choosing an existing image from your photo library." withDone:@"OK" withTag:0];
             
         }
         
@@ -555,7 +555,7 @@
         }
         else {
             
-            [self customAlert:@"We couldn't access your photo library" withDone:@"Ok" withTag:0];
+            [self customAlert:@"We couldn't access your photo library" withDone:@"OK" withTag:0];
             
         }
         

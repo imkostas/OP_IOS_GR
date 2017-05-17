@@ -533,7 +533,7 @@ typedef NS_ENUM(NSUInteger, KeyboardState) {
             
         } else {
             
-            [self customAlert:@"We were unable to log you in" withDone:@"Ok"];
+            [self customAlert:@"We were unable to log you in" withDone:@"OK"];
             
         }
         

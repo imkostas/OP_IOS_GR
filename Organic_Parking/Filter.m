@@ -123,6 +123,8 @@
     self.user.shouldRefreshMapPins = YES;
     self.user.filter = [[DateFilter alloc] init];
     
+    self.user.postDetails = 0;
+    
     [self dismissViewControllerAnimated:YES completion:nil];
     
 }
@@ -130,6 +132,12 @@
 - (IBAction)updateFilters:(id)sender {
     
     self.user.shouldRefreshMapPins = YES;
+    
+    if(self.user.postDetails <= 0){
+        [self customAlert:@"Your search needs a category" withDone:@"OK"];
+        return;
+    }
+
     
     //dismiss view controller
     [self dismissViewControllerAnimated:YES completion:nil];
@@ -220,7 +228,127 @@
         [self.user.filter setWindow:snapValue];
         
     }
+ 
+}
+
+- (IBAction)postMeter:(id)sender {
     
+    //turn it on and everything else off
+    [self.postMeter setBackgroundImage:[UIImage imageNamed:@"Meter Active"] forState:UIControlStateNormal];
+    [self.meterLabel setTextColor:[UIColor colorWithRed:1.0f green:70/255.0f blue:98/255.0f alpha:1.0]];
+    self.user.postDetails = 1;
+    
+    [self.postPermit setBackgroundImage:[UIImage imageNamed:@"Permit Inactive"] forState:UIControlStateNormal];
+    [self.permitLabel setTextColor:[UIColor colorWithRed:170/255.0f green:170/255.0f blue:170/255.0f alpha:1.0]];
+    
+    [self.postTimeLimit setBackgroundImage:[UIImage imageNamed:@"Time Inactive"] forState:UIControlStateNormal];
+    [self.timeLimitLabel setTextColor:[UIColor colorWithRed:170/255.0f green:170/255.0f blue:170/255.0f alpha:1.0]];
+    
+    
+}
+
+- (IBAction)postPermit:(id)sender {
+    
+    //turn it on and everything else off
+    
+    [self.postPermit setBackgroundImage:[UIImage imageNamed:@"Permit Active"] forState:UIControlStateNormal];
+    [self.permitLabel setTextColor:[UIColor colorWithRed:1.0f green:70/255.0f blue:98/255.0f alpha:1.0]];
+    self.user.postDetails = 2;
+    
+    [self.postMeter setBackgroundImage:[UIImage imageNamed:@"Meter Inactive"] forState:UIControlStateNormal];
+    [self.meterLabel setTextColor:[UIColor colorWithRed:170/255.0f green:170/255.0f blue:170/255.0f alpha:1.0]];
+    
+    [self.postTimeLimit setBackgroundImage:[UIImage imageNamed:@"Time Inactive"] forState:UIControlStateNormal];
+    [self.timeLimitLabel setTextColor:[UIColor colorWithRed:170/255.0f green:170/255.0f blue:170/255.0f alpha:1.0]];
+    
+}
+
+- (IBAction)postTimeLimit:(id)sender {
+    
+    //turn it on and everything else off
+    
+    [self.postTimeLimit setBackgroundImage:[UIImage imageNamed:@"Time Active"] forState:UIControlStateNormal];
+    [self.timeLimitLabel setTextColor:[UIColor colorWithRed:1.0f green:70/255.0f blue:98/255.0f alpha:1.0]];
+    self.user.postDetails = 3;
+    
+    [self.postMeter setBackgroundImage:[UIImage imageNamed:@"Meter Inactive"] forState:UIControlStateNormal];
+    [self.meterLabel setTextColor:[UIColor colorWithRed:170/255.0f green:170/255.0f blue:170/255.0f alpha:1.0]];
+    
+    [self.postPermit setBackgroundImage:[UIImage imageNamed:@"Permit Inactive"] forState:UIControlStateNormal];
+    [self.permitLabel setTextColor:[UIColor colorWithRed:170/255.0f green:170/255.0f blue:170/255.0f alpha:1.0]];
+    
+    
+}
+
+
+//method for creating and presenting a custom alert object
+- (void)customAlert:(NSString *)alert withDone:(NSString *)done {
+    
+    //if alert already showing, hide it
+    if(self.customAlert){
+        
+        //set custom alert alpha to 0
+        [UIView animateWithDuration:0.25 animations:^{[self.customAlert setAlpha:0.0f];}];
+        
+    }
+    
+    //initialize custom alert object
+    self.customAlert = [[CustomAlert alloc] initWithType:1 withframe:self.view.frame withMessage:alert];
+    [self.customAlert.leftButton setTitle:done forState:UIControlStateNormal];
+    [self.customAlert.leftButton setBackgroundColor:[UIColor colorWithRed:255/255.0f green:70/255.0f blue:98/255.0f alpha:1.0]];
+    self.customAlert.customAlertDelegate = self;
+    
+    //add as subview and make alpha 1.0
+    [self.view addSubview:self.customAlert];
+    [UIView animateWithDuration:0.25 animations:^{[self.customAlert setAlpha:1.0f];}];
+    
+}
+
+//custom alert object left button delegate method
+- (void)leftActionMethod:(int)method {
+    
+    
+    //hide custom alert and remove it from its superview
+    [UIView animateWithDuration:0.25 animations:^{
+        
+        [self.customAlert setAlpha:0.0f];
+        
+    } completion:^(BOOL finished) {
+        
+        [self.customAlert removeFromSuperview];
+        
+    }];
+    
+}
+
+//custom alert object right button delegate method
+- (void)rightActionMethod:(int)method {
+    
+    switch (method) {
+        case 0:
+            [self hideAlert];
+            
+            break;
+        case 1:
+            //post log out notification
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"logout" object:nil];
+            break;
+    }
+    
+    
+}
+
+-(void)hideAlert {
+    //hide custom alert and remove it from its superview
+    [UIView animateWithDuration:0.25 animations:^{
+        
+        [self.customAlert setAlpha:0.0f];
+        
+    } completion:^(BOOL finished) {
+        
+        [self.customAlert removeFromSuperview];
+        
+    }];
 }
 
 @end

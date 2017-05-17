@@ -205,7 +205,7 @@
                   
               } else {
                   
-                  [self customAlert:@"We were unable to remove your payment method" withDone:@"Ok"];
+                  [self customAlert:@"We were unable to remove your payment method" withDone:@"OK"];
                   
               }
               

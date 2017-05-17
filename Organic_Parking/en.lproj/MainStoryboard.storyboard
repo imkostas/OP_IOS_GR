@@ -797,6 +797,70 @@
                                         </subviews>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
+                                    <view contentMode="scaleToFill" misplaced="YES" id="hFL-hC-Wvh">
+                                        <rect key="frame" x="0.0" y="272" width="320" height="180"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9er-K1-YJz" userLabel="meter">
+                                                <rect key="frame" x="50" y="35" width="60" height="65"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" backgroundImage="Meter Inactive">
+                                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="postMeter:" destination="C8u-ok-f92" eventType="touchUpInside" id="emn-pS-w8t"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cQ8-AC-usx" userLabel="permit">
+                                                <rect key="frame" x="130" y="35" width="60" height="65"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" backgroundImage="Permit Inactive">
+                                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="postPermit:" destination="C8u-ok-f92" eventType="touchUpInside" id="fo6-hW-x7a"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="pAm-Ms-nVn" userLabel="time limit">
+                                                <rect key="frame" x="210" y="35" width="60" height="65"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" backgroundImage="Time Inactive">
+                                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="postTimeLimit:" destination="C8u-ok-f92" eventType="touchUpInside" id="YCZ-91-by7"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="vehicle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aUM-H7-Cu4">
+                                                <rect key="frame" x="40" y="99" width="80" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="16"/>
+                                                <color key="textColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="seat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Cyg-pj-FLK">
+                                                <rect key="frame" x="120" y="99" width="80" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="16"/>
+                                                <color key="textColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="stand" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="niP-Ok-LFY">
+                                                <rect key="frame" x="200" y="99" width="80" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="16"/>
+                                                <color key="textColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="select a category to search" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TQE-k0-uLH">
+                                                <rect key="frame" x="0.0" y="124" width="320" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="16"/>
+                                                <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </view>
                                 </subviews>
                             </scrollView>
                             <view contentMode="scaleToFill" id="QJa-GP-DXs">
@@ -863,6 +927,11 @@
                         <outlet property="clearFiltersBtn" destination="kDU-vn-ucR" id="BVJ-no-Pzo"/>
                         <outlet property="datePicker" destination="Stu-Hy-IUG" id="NlY-ND-HUo"/>
                         <outlet property="dayLabel" destination="5PQ-RC-ZdI" id="zXY-y6-Q7z"/>
+                        <outlet property="meterLabel" destination="aUM-H7-Cu4" id="ZgU-p9-KdE"/>
+                        <outlet property="permitLabel" destination="Cyg-pj-FLK" id="VTQ-Lx-25A"/>
+                        <outlet property="postMeter" destination="9er-K1-YJz" id="jQg-KP-3pJ"/>
+                        <outlet property="postPermit" destination="cQ8-AC-usx" id="J2t-51-n47"/>
+                        <outlet property="postTimeLimit" destination="pAm-Ms-nVn" id="bNQ-lR-evU"/>
                         <outlet property="scrollView" destination="niS-ye-xox" id="IMe-1V-XnQ"/>
                         <outlet property="searchWindow" destination="32r-AF-FEd" id="iRK-PO-dQf"/>
                         <outlet property="setTimeFilterView" destination="QJa-GP-DXs" id="91S-SJ-NSr"/>
@@ -870,6 +939,7 @@
                         <outlet property="slider" destination="ad7-8h-V7h" id="zEY-ue-Arc"/>
                         <outlet property="timeFilterView" destination="Ml1-ZS-3Dv" id="sa7-6j-Fzk"/>
                         <outlet property="timeLabel" destination="fsw-ve-hHB" id="j4s-Eu-ecs"/>
+                        <outlet property="timeLimitLabel" destination="niP-Ok-LFY" id="OUb-an-mFL"/>
                         <outlet property="topBar" destination="WUm-5x-F0T" id="fcT-Ul-u1d"/>
                         <outlet property="topBarTitle" destination="wb5-EC-JKb" id="m7K-jA-vpn"/>
                         <outlet property="updateFiltersBtn" destination="DYN-c4-L7s" id="Gqb-pp-JX8"/>
@@ -877,7 +947,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jpl-Z4-BFc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="362" y="-1114"/>
+            <point key="canvasLocation" x="361.5" y="-1114.5"/>
         </scene>
         <!--Forgot Password-->
         <scene sceneID="f2z-GB-USA">
@@ -2871,28 +2941,6 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="sIB-Un-eoU" userLabel="payment">
-                                                <rect key="frame" x="0.0" y="111" width="320" height="45"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal">
-                                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="payment:" destination="hdH-ka-LgL" eventType="touchUpInside" id="nyP-pQ-A1X"/>
-                                                </connections>
-                                            </button>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Payment" id="a0l-gS-coV">
-                                                <rect key="frame" x="24" y="128" width="23" height="15"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="payment" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5XV-TM-uqb">
-                                                <rect key="frame" x="70" y="124" width="170" height="20"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
-                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="iyF-0V-Yk9">
                                                 <rect key="frame" x="0.0" y="156" width="320" height="1"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -2900,8 +2948,8 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="FKz-QT-6XZ" userLabel="change password">
-                                                <rect key="frame" x="0.0" y="157" width="320" height="45"/>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="FKz-QT-6XZ" userLabel="change password">
+                                                <rect key="frame" x="0.0" y="111" width="320" height="45"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal">
@@ -2911,12 +2959,12 @@
                                                     <action selector="changePassword:" destination="hdH-ka-LgL" eventType="touchUpInside" id="0Ox-02-mct"/>
                                                 </connections>
                                             </button>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Change Password" id="k9i-eg-vkG">
-                                                <rect key="frame" x="27" y="170" width="17" height="20"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Change Password" id="k9i-eg-vkG">
+                                                <rect key="frame" x="27" y="123" width="17" height="20"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="change password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="B2N-lD-Xpg">
-                                                <rect key="frame" x="70" y="170" width="170" height="20"/>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="change password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="B2N-lD-Xpg">
+                                                <rect key="frame" x="70" y="123" width="170" height="20"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -3198,7 +3246,6 @@
                         <outlet property="logoText" destination="HVW-W8-2G0" id="Cb7-K2-qEZ"/>
                         <outlet property="logoutView" destination="LoL-NJ-xhF" id="p2d-TK-bPI"/>
                         <outlet property="menuTopView" destination="4hv-LI-m0S" id="Tbz-3O-SFz"/>
-                        <outlet property="paymentBtn" destination="sIB-Un-eoU" id="K3L-B1-CZp"/>
                         <outlet property="profileBtn" destination="u9X-hL-4tL" id="VpN-S7-viT"/>
                         <outlet property="rateBtn" destination="WVq-Lo-bon" id="vjh-ay-lIh"/>
                         <outlet property="scrollView" destination="Whq-wg-hB2" id="eQ0-0u-7G8"/>
@@ -3423,7 +3470,7 @@
                                                     <action selector="postTimeLimit:" destination="RED-PD-qk2" eventType="touchUpInside" id="B8O-3N-4I5"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="car" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GQM-sa-at8">
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="vehicle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GQM-sa-at8">
                                                 <rect key="frame" x="40" y="99" width="80" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="16"/>
@@ -4169,7 +4216,6 @@
         <image name="Meter Post Active" width="48" height="48"/>
         <image name="Midsize Blue" width="53" height="20"/>
         <image name="No Profile Image" width="137" height="137"/>
-        <image name="Payment" width="22" height="14"/>
         <image name="Permit Blue" width="31" height="31"/>
         <image name="Permit Inactive" width="60" height="60"/>
         <image name="Permit Post Active" width="48" height="48"/>

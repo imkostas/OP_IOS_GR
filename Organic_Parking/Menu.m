@@ -104,7 +104,7 @@
     
     //initialize min and max for settings and help
     settings_min = 65.0f;
-    settings_max = 203.0f;  //157.0f
+    settings_max = 157.0f;  //157.0f   203.0f
     help_min = 65.0f;
     help_max = 292.0f;
     
@@ -303,7 +303,7 @@
     } else {
         
         self.customAlert = [[CustomAlert alloc] initWithType:1 withframe:self.parentViewController.view.frame withMessage:@"Unfortunately your device doesn't support email. You can always contact us through your personal email client at support@organicparking.com"];
-        [self.customAlert.leftButton setTitle:@"Ok" forState:UIControlStateNormal];
+        [self.customAlert.leftButton setTitle:@"OK" forState:UIControlStateNormal];
         self.customAlert.customAlertDelegate = self;
         [self.parentViewController.view addSubview:self.customAlert];
         [UIView animateWithDuration:0.25 animations:^{[self.customAlert setAlpha:1.0f];}];

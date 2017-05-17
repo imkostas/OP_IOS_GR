@@ -139,7 +139,7 @@
                  
              } else {
                  
-                 [self customAlert:@"Chat is currently unavailable" withDone:@"Ok"];
+                 [self customAlert:@"Chat is currently unavailable" withDone:@"OK"];
                  
              }
              

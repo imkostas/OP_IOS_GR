@@ -282,7 +282,7 @@
                   
               } else {
                   
-                  [self customAlert:@"Unable to leave feedback" withDone:@"Ok" withTag:0];
+                  [self customAlert:@"Unable to leave feedback" withDone:@"OK" withTag:0];
                   
               }
               
@@ -339,12 +339,12 @@
     //check again that rating submission is valid
     if(self.rating == 0){
         
-        [self customAlert:@"You still need to set a star rating" withDone:@"Ok" withTag:0];
+        [self customAlert:@"You still need to set a star rating" withDone:@"OK" withTag:0];
         return false;
         
     } else if(self.recommended == -1){
         
-        [self customAlert:[NSString stringWithFormat:@"You still need indicate whether or not you recommend %@", self.user.feebackInfo.ratee] withDone:@"Ok" withTag:0];
+        [self customAlert:[NSString stringWithFormat:@"You still need indicate whether or not you recommend %@", self.user.feebackInfo.ratee] withDone:@"OK" withTag:0];
         return false;
         
     } else {
@@ -404,7 +404,7 @@
                       
                   } else {
                       
-                      [self customAlert:@"Unable to leave feedback" withDone:@"Ok" withTag:0];
+                      [self customAlert:@"Unable to leave feedback" withDone:@"OK" withTag:0];
                       
                   }
                   

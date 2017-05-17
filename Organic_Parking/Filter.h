@@ -8,7 +8,7 @@
 
 #import "UserInfo.h"
 
-@interface Filter : UIViewController <UIScrollViewDelegate>
+@interface Filter : UIViewController <UIScrollViewDelegate, CustomAlertDelegate>
 
 //navigation bar
 @property (strong, nonatomic) IBOutlet UIImageView *topBar; //top bar
@@ -25,6 +25,14 @@
 @property (strong, nonatomic) IBOutlet UISlider *slider; //slider for adjusting search window
 @property (strong, nonatomic) IBOutlet UILabel *searchWindow; //displays search window
 
+@property (strong, nonatomic) IBOutlet UIButton *postMeter; //set if post is metered or not
+@property (strong, nonatomic) IBOutlet UILabel *meterLabel; //changes color when active
+@property (strong, nonatomic) IBOutlet UIButton *postPermit; //set if post requires permit or not
+@property (strong, nonatomic) IBOutlet UILabel *permitLabel; //changes color when active
+@property (strong, nonatomic) IBOutlet UIButton *postTimeLimit; //set if post has time limit or not
+@property (strong, nonatomic) IBOutlet UILabel *timeLimitLabel; //changes color when active
+
+
 //view for setting time to filter by
 @property (strong, nonatomic) IBOutlet UIView *setTimeFilterView; //view to hold contents of filter view contents
 @property (strong, nonatomic) IBOutlet UIView *setTimeFilterViewContents; //view to hold date picker
@@ -32,5 +40,6 @@
 
 //view variables
 @property (nonatomic, strong) UserInfo *user; //user info
+@property (nonatomic, strong) CustomAlert *customAlert; //custom alert
 
 @end

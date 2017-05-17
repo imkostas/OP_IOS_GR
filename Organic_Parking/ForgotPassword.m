@@ -68,7 +68,7 @@
     //check that the username entered isn't empty
     if([[self.recoverText.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] length]==0){
         
-        [self customAlert:@"Your username is required before we can reset your password" withDone:@"Ok" withTag:0];
+        [self customAlert:@"Your username is required before we can reset your password" withDone:@"OK" withTag:0];
         return false;
         
     }

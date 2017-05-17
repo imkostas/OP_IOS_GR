@@ -230,7 +230,7 @@
                   if([[[operation.responseObject valueForKey:@"alert"] valueForKey:@"message"] isEqualToString:@""]){
                       
                       [self customAlert:@"This request has just been canceled"
-                               withDone:@"Ok"
+                               withDone:@"OK"
                                 withTag:1];
                       
                   } else {
@@ -243,7 +243,7 @@
                   
               } else {
                   
-                  [self customAlert:@"Unable to send the requester your response" withDone:@"Ok" withTag:0];
+                  [self customAlert:@"Unable to send the requester your response" withDone:@"OK" withTag:0];
                   
               }
               

@@ -477,7 +477,7 @@
                       
                   } else {
                       
-                      [self customAlert:@"We were unable to send your message" withDone:@"Ok"];
+                      [self customAlert:@"We were unable to send your message" withDone:@"OK"];
                       
                   }
                   
@@ -558,7 +558,7 @@
 //                     
 //                 } else {
 //                     
-//                     [self customAlert:@"Chat is currently unavailable" withDone:@"Ok"];
+//                     [self customAlert:@"Chat is currently unavailable" withDone:@"OK"];
 //                     
 //                 }
                  

@@ -90,16 +90,16 @@
     
     switch (self.user.code) {
         case MISSING_PAYMENT_METHOD:
-            [self customAlert:@"You must add a payment method before requesting. \n\nIf you request a spot for $0 you don't have to." withDone:@"Ok"];
+            [self customAlert:@"You must add a payment method before requesting. \n\nIf you request a spot for $0 you don't have to." withDone:@"OK"];
             break;
         
         case MISSING_FUNDING_SOURCE:
-            [self customAlert:@"You must add an account before posting \n\nIf you post a spot for $0 you don't have to." withDone:@"Ok"];
+            [self customAlert:@"You must add an account before posting \n\nIf you post a spot for $0 you don't have to." withDone:@"OK"];
             break;
         
         case EXPIRED_PAYMENT_METHOD:
             [self customAlert:@"The card associated with your account has expired. Change card to request spot."
-                     withDone:@"Ok"];
+                     withDone:@"OK"];
             break;
             
         default:
@@ -486,7 +486,7 @@
 //                  
 //              } else {
 //                  
-//                  [self customAlert:@"We were unable to remove your payment method" withDone:@"Ok"];
+//                  [self customAlert:@"We were unable to remove your payment method" withDone:@"OK"];
 //                  
 //              }
 //              
@@ -523,7 +523,7 @@
     } else if(indexPath.row == self.user.braintree.paymentMethods.count - 1) {
         
         PaymentMethod *payment = (PaymentMethod *)[self.user.braintree.paymentMethods objectAtIndex:0];
-        if(payment.isExpired)[self customAlert:@"This card has expired. You will need to provide a valid card to request parking." withDone:@"Ok"];
+        if(payment.isExpired)[self customAlert:@"This card has expired. You will need to provide a valid card to request parking." withDone:@"OK"];
         
     }
     
@@ -601,7 +601,7 @@
                  
              } else {
                  
-                 [self customAlert:@"We were unable to add your payment method" withDone:@"Ok"];
+                 [self customAlert:@"We were unable to add your payment method" withDone:@"OK"];
                  
              }
              

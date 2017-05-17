@@ -380,11 +380,11 @@
     
     if([type isEqualToString:@"Local Notification"]){
         
-        [self customAlert:@"Received local push notification" withDone:@"Ok" withColor:NO withTag:0];
+        [self customAlert:@"Received local push notification" withDone:@"OK" withColor:NO withTag:0];
         
     } else if([type isEqualToString:@"missedMessage"]){
         
-        [self customAlert:[NSString stringWithFormat:@"%@", [[notification objectForKey:@"aps"] valueForKey:@"alert"]] withDone:@"Ok" withColor:NO withTag:0];
+        [self customAlert:[NSString stringWithFormat:@"%@", [[notification objectForKey:@"aps"] valueForKey:@"alert"]] withDone:@"OK" withColor:NO withTag:0];
         
     } else if([type isEqualToString:@"canceledDeal"]){
         
@@ -393,7 +393,7 @@
         
     } else if([type isEqualToString:@"autoDeletedPost"]){
         
-        [self customAlert:[NSString stringWithFormat:@"%@", [[notification objectForKey:@"aps"] valueForKey:@"alert"]] withDone:@"Ok" withColor:NO withTag:0];
+        [self customAlert:[NSString stringWithFormat:@"%@", [[notification objectForKey:@"aps"] valueForKey:@"alert"]] withDone:@"OK" withColor:NO withTag:0];
         
         [self hideCurrentView];
         NSLog(@"View should have been hidden");
@@ -401,7 +401,7 @@
         
     } else if([type isEqualToString:@"finalizedDeal"]){
         
-        [self customAlert:[NSString stringWithFormat:@"%@", [[notification objectForKey:@"aps"] valueForKey:@"alert"]] withDone:@"Ok" withColor:NO withTag:0];
+        [self customAlert:[NSString stringWithFormat:@"%@", [[notification objectForKey:@"aps"] valueForKey:@"alert"]] withDone:@"OK" withColor:NO withTag:0];
         
     } else if([type isEqualToString:@"postRequested"] || [type isEqualToString:@"respondedToRequest"]){
         
@@ -771,7 +771,7 @@
                   
               } else {
                   
-                  [self customAlert:@"Unable to send payment" withDone:@"Ok" withColor:NO withTag:0];
+                  [self customAlert:@"Unable to send payment" withDone:@"OK" withColor:NO withTag:0];
                   
               }
               
@@ -794,7 +794,7 @@
     //FREE POST (NO PAYMENT METHOD REQUIRED) IF PRICE IS 0
     if ([CLLocationManager authorizationStatus] != kCLAuthorizationStatusDenied &&
         !self.user.hasRequest &&
-        self.user.vehicle.hasVehicle &&
+       //&&&&&&&&& self.user.vehicle.hasVehicle &&
         self.annotation.price == 0.){
         canRequest = true;
         //NSLog(@"end can request = %d %f", canRequest , self.annotation.price);
@@ -809,14 +809,18 @@
     } else if(self.user.hasRequest) {
         
         if(self.annotation.post_id != self.user.request.post_id){
-            [self customAlert:@"Currently, you're only allowed to request one spot at a time" withDone:@"Ok" withColor:NO withTag:0];
+            [self customAlert:@"Currently, you're only allowed to request one spot at a time" withDone:@"OK" withColor:NO withTag:0];
         } else {
             [self.requestPostButton setTitle:@"CANCEL REQUEST" forState:UIControlStateNormal];
-            [self customAlert:@"You've already requested this spot" withDone:@"Ok" withColor:NO withTag:0];
+            [self customAlert:@"You've already requested this spot" withDone:@"OK" withColor:NO withTag:0];
         }
         canRequest = false;
         
-    }  else if(!self.user.vehicle.hasVehicle) {
+    }
+    
+    /*  &&&&&&&&&&&&&&&
+     
+     else if(!self.user.vehicle.hasVehicle) {
         
         self.user.code = MISSING_VEHICLE;
         MainViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"profileNavController"];
@@ -837,7 +841,7 @@
         [self presentViewController:viewController animated:YES completion:^{}];
         canRequest = false;
      }
-    
+    &&&&&&&&&&&&&&&&& */
     
     return canRequest;
 }
@@ -894,7 +898,7 @@
                       
                   } else {
                       
-                      [self customAlert:@"We were unable to request this spot for you" withDone:@"Ok" withColor:NO withTag:0];
+                      [self customAlert:@"We were unable to request this spot for you" withDone:@"OK" withColor:NO withTag:0];
                       
                   }
                   
@@ -975,7 +979,7 @@
                   
               } else {
                   
-                  [self customAlert:@"We were unable to cancel this request for you" withDone:@"Ok" withColor:NO withTag:0];
+                  [self customAlert:@"We were unable to cancel this request for you" withDone:@"OK" withColor:NO withTag:0];
                   
               }
               
@@ -1080,7 +1084,7 @@
                   
               } else {
                   
-                  [self customAlert:@"We were unable to delete your post" withDone:@"Ok" withColor:YES withTag:0];
+                  [self customAlert:@"We were unable to delete your post" withDone:@"OK" withColor:YES withTag:0];
                   
               }
               
@@ -1156,7 +1160,7 @@
                   
               } else {
                   
-                  [self customAlert:@"Unable to cancel deal" withDone:@"Ok"
+                  [self customAlert:@"Unable to cancel deal" withDone:@"OK"
                           withColor:((currentView == 1) ? NO : YES) withTag:0];
                   
               }
@@ -1295,10 +1299,12 @@
                  pin.details = [[item objectForKey:@"details"] intValue];
                  pin.total_stars = [[item objectForKey:@"total_stars"] intValue];
                  pin.total_deals = [[item objectForKey:@"total_deals"] intValue];
-                 pin.car_make = [item objectForKey: @"car_make"];
-                 pin.car_model = [item objectForKey: @"car_model"];
-                 pin.car_color = [item objectForKey: @"car_color"];
-                 pin.car_size = [[item objectForKey:@"car_size"] intValue];
+                 //&&&&&&&&
+                 pin.car_make = @""; //[item objectForKey: @"car_make"];
+                 pin.car_model = @""; //[item objectForKey: @"car_model"];
+                 pin.car_color = @""; //[item objectForKey: @"car_color"];
+                 pin.car_size = 0; //[[item objectForKey:@"car_size"] intValue];
+                 //&&&&&&&&
                  pin.profile_image = [NSString stringWithFormat:@"%@%@.png", self.user.img_uri, pin.p_username];
                  
                  [pins addObject:pin];
@@ -1849,7 +1855,7 @@
     //
     //        } else if(self.user.hasPost){
     //
-    //            [self customAlert:@"Currently, you're only allowed to post one spot at a time" withDone:@"Ok" withColor:NO];
+    //            [self customAlert:@"Currently, you're only allowed to post one spot at a time" withDone:@"OK" withColor:NO];
     //
     //        } else if(!self.user.vehicle.hasVehicle) {
     //
@@ -1875,7 +1881,7 @@
     //                [self.customAlert.leftButton setTitle:@"Passenger" forState:UIControlStateNormal];
     //                [self.customAlert.leftButton setTag:5];
     //                [self.customAlert.rightButton setBackgroundColor:OP_PINK_COLOR];
-    //                [self.customAlert.rightButton setTitle:@"Ok" forState:UIControlStateNormal];
+    //                [self.customAlert.rightButton setTitle:@"OK" forState:UIControlStateNormal];
     //                self.customAlert.customAlertDelegate = self;
     //                [self.parentViewController.view addSubview:self.customAlert];
     //                [UIView animateWithDuration:ANIMATION_SPEED animations:^{[self.customAlert setAlpha:1.0f];}];
@@ -2530,7 +2536,7 @@
                                                         message:@"To use Organic Parking, location services must be enabled within Settings"
                                                        delegate:self
                                               cancelButtonTitle:@"Settings"
-                                              otherButtonTitles:@"Ok", nil];
+                                              otherButtonTitles:@"OK", nil];
         [alert show];
         
     } else {
@@ -2538,7 +2544,7 @@
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Enable Location Services"
                                                         message:@"To use Organic Parking, location services must be enabled within Settings"
                                                        delegate:self
-                                              cancelButtonTitle:@"Ok"
+                                              cancelButtonTitle:@"OK"
                                               otherButtonTitles:nil];
         [alert show];
         
@@ -2843,7 +2849,7 @@
             
         } else if(self.user.hasPost){
             
-            [self customAlert:@"Currently, you're only allowed to post one spot at a time" withDone:@"Ok" withColor:NO withTag:0];
+            [self customAlert:@"Currently, you're only allowed to post one spot at a time" withDone:@"OK" withColor:NO withTag:0];
             
             //        } else if(!self.user.vehicle.hasVehicle) {
             //
@@ -2869,7 +2875,7 @@
                 [self.customAlert.leftButton setTitle:@"Passenger" forState:UIControlStateNormal];
                 [self.customAlert.leftButton setTag:4];
                 [self.customAlert.rightButton setBackgroundColor:OP_PINK_COLOR];
-                [self.customAlert.rightButton setTitle:@"Ok" forState:UIControlStateNormal];
+                [self.customAlert.rightButton setTitle:@"OK" forState:UIControlStateNormal];
                 [self.customAlert.rightButton setTag:4];
                 self.customAlert.customAlertDelegate = self;
                 [self.parentViewController.view addSubview:self.customAlert];
@@ -2988,7 +2994,7 @@
              } else {
                  
                  [self dismissedPostView];
-                 [self customAlert:@"Organic Parking is unavailable in this city" withDone:@"Ok" withColor:YES withTag:0];
+                 [self customAlert:@"Organic Parking is unavailable in this city" withDone:@"OK" withColor:YES withTag:0];
                  
              }
              
@@ -3007,7 +3013,7 @@
                  
              } else {
                  
-                 [self customAlert:@"Unable to begin posting process" withDone:@"Ok" withColor:YES withTag:0];
+                 [self customAlert:@"Unable to begin posting process" withDone:@"OK" withColor:YES withTag:0];
                  
              }
              
