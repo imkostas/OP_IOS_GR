@@ -1261,7 +1261,7 @@
         
     }
     
-    NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys: startSearch, @"stime", endSearch, @"etime", [NSString stringWithFormat:@"%f", minLatitude], @"minlat", [NSString stringWithFormat:@"%f", maxLatitude], @"maxlat", [NSString stringWithFormat:@"%f", minLongitude], @"minlon", [NSString stringWithFormat:@"%f", maxLongitude], @"maxlon", self.user.username, @"username", self.user.apiKey, @"api_key", nil];
+    NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys: startSearch, @"stime", endSearch, @"etime", [NSString stringWithFormat:@"%i", self.user.postDetails], @"details", [NSString stringWithFormat:@"%f", minLatitude], @"minlat", [NSString stringWithFormat:@"%f", maxLatitude], @"maxlat", [NSString stringWithFormat:@"%f", minLongitude], @"minlon", [NSString stringWithFormat:@"%f", maxLongitude], @"maxlon", self.user.username, @"username", self.user.apiKey, @"api_key", nil];
     
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     [manager GET:[NSString stringWithFormat:@"%@getSpots", self.user.uri] parameters:params

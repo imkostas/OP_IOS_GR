@@ -424,14 +424,14 @@
 - (IBAction)postMeter:(id)sender {
     
     //turn it on and everything else off
-        [self.postMeter setBackgroundImage:[UIImage imageNamed:@"Meter Active"] forState:UIControlStateNormal];
+        [self.postMeter setBackgroundImage:[UIImage imageNamed:@"Vehicle Active"] forState:UIControlStateNormal];
         [self.meterLabel setTextColor:[UIColor colorWithRed:1.0f green:70/255.0f blue:98/255.0f alpha:1.0]];
         postDetails = 4;
         
-        [self.postPermit setBackgroundImage:[UIImage imageNamed:@"Permit Inactive"] forState:UIControlStateNormal];
+        [self.postPermit setBackgroundImage:[UIImage imageNamed:@"Seat Inactive"] forState:UIControlStateNormal];
         [self.permitLabel setTextColor:[UIColor colorWithRed:170/255.0f green:170/255.0f blue:170/255.0f alpha:1.0]];
 
-        [self.postTimeLimit setBackgroundImage:[UIImage imageNamed:@"Time Inactive"] forState:UIControlStateNormal];
+        [self.postTimeLimit setBackgroundImage:[UIImage imageNamed:@"Stand Inactive"] forState:UIControlStateNormal];
         [self.timeLimitLabel setTextColor:[UIColor colorWithRed:170/255.0f green:170/255.0f blue:170/255.0f alpha:1.0]];
 
     
@@ -441,14 +441,14 @@
     
     //turn it on and everything else off
     
-        [self.postPermit setBackgroundImage:[UIImage imageNamed:@"Permit Active"] forState:UIControlStateNormal];
+        [self.postPermit setBackgroundImage:[UIImage imageNamed:@"Seat Active"] forState:UIControlStateNormal];
         [self.permitLabel setTextColor:[UIColor colorWithRed:1.0f green:70/255.0f blue:98/255.0f alpha:1.0]];
         postDetails = 2;
         
-        [self.postMeter setBackgroundImage:[UIImage imageNamed:@"Meter Inactive"] forState:UIControlStateNormal];
+        [self.postMeter setBackgroundImage:[UIImage imageNamed:@"Vehicle Inactive"] forState:UIControlStateNormal];
         [self.meterLabel setTextColor:[UIColor colorWithRed:170/255.0f green:170/255.0f blue:170/255.0f alpha:1.0]];
 
-        [self.postTimeLimit setBackgroundImage:[UIImage imageNamed:@"Time Inactive"] forState:UIControlStateNormal];
+        [self.postTimeLimit setBackgroundImage:[UIImage imageNamed:@"Stand Inactive"] forState:UIControlStateNormal];
         [self.timeLimitLabel setTextColor:[UIColor colorWithRed:170/255.0f green:170/255.0f blue:170/255.0f alpha:1.0]];
     
 }
@@ -457,14 +457,14 @@
     
     //turn it on and everything else off
     
-        [self.postTimeLimit setBackgroundImage:[UIImage imageNamed:@"Time Active"] forState:UIControlStateNormal];
+        [self.postTimeLimit setBackgroundImage:[UIImage imageNamed:@"Stand Active"] forState:UIControlStateNormal];
         [self.timeLimitLabel setTextColor:[UIColor colorWithRed:1.0f green:70/255.0f blue:98/255.0f alpha:1.0]];
         postDetails = 1;
         
-        [self.postMeter setBackgroundImage:[UIImage imageNamed:@"Meter Inactive"] forState:UIControlStateNormal];
+        [self.postMeter setBackgroundImage:[UIImage imageNamed:@"Vehicle Inactive"] forState:UIControlStateNormal];
         [self.meterLabel setTextColor:[UIColor colorWithRed:170/255.0f green:170/255.0f blue:170/255.0f alpha:1.0]];
         
-        [self.postPermit setBackgroundImage:[UIImage imageNamed:@"Permit Inactive"] forState:UIControlStateNormal];
+        [self.postPermit setBackgroundImage:[UIImage imageNamed:@"Seat Inactive"] forState:UIControlStateNormal];
         [self.permitLabel setTextColor:[UIColor colorWithRed:170/255.0f green:170/255.0f blue:170/255.0f alpha:1.0]];
 
     
