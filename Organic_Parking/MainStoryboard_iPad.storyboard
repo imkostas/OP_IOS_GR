@@ -1863,108 +1863,6 @@
             </objects>
             <point key="canvasLocation" x="-1251" y="-235"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="xvN-rF-q5d">
-            <objects>
-                <viewController id="aRH-f7-ZKw" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="cuW-1U-OpI">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Vehicle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wSN-J1-cXD">
-                                <rect key="frame" x="49" y="318" width="260" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
-                                <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Box" id="a1r-5O-gsC">
-                                <rect key="frame" x="49" y="345" width="260" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="make" minimumFontSize="15" clearButtonMode="whileEditing" id="Vpn-0R-njA">
-                                <rect key="frame" x="59" y="345" width="240" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
-                                <connections>
-                                    <action selector="makeChanged:" destination="590-3G-dyQ" eventType="editingChanged" id="MBC-vS-i2W"/>
-                                </connections>
-                            </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Box" id="xH5-Y6-IJs">
-                                <rect key="frame" x="49" y="389" width="260" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="model" minimumFontSize="15" clearButtonMode="whileEditing" id="iYo-Vp-Ap9">
-                                <rect key="frame" x="59" y="389" width="240" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
-                                <connections>
-                                    <action selector="modelChanged:" destination="590-3G-dyQ" eventType="editingChanged" id="iRI-eb-gHB"/>
-                                </connections>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Yww-fF-PiO">
-                                <rect key="frame" x="49" y="433" width="260" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Box">
-                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="setCarColor:" destination="590-3G-dyQ" eventType="touchUpInside" id="VhF-aM-kmb"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="color" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fdD-OV-VUz">
-                                <rect key="frame" x="59" y="433" width="240" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
-                                <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Drop Down" id="aqq-hj-im0">
-                                <rect key="frame" x="281" y="452" width="18" height="10"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Gy4-Ku-Qmr">
-                                <rect key="frame" x="59" y="505" width="53" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Compact Light">
-                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="setCarCompact:" destination="590-3G-dyQ" eventType="touchUpInside" id="4Uf-xB-zKf"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="kKN-BN-Arr">
-                                <rect key="frame" x="133" y="504" width="73" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Sedan Light">
-                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="setCarMidsize:" destination="590-3G-dyQ" eventType="touchUpInside" id="N9o-vP-2rs"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="yhB-68-5H6">
-                                <rect key="frame" x="226" y="500" width="83" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="SUV Light">
-                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="setCarLarge:" destination="590-3G-dyQ" eventType="touchUpInside" id="aqp-R6-MVn"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Dfb-6K-F3f" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1125" y="2215"/>
-        </scene>
         <!--Change Password-->
         <scene sceneID="ILW-Ae-98a">
             <objects>
@@ -2277,15 +2175,9 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="cancelBtn" destination="frW-7e-5Hm" id="lod-wi-0h1"/>
-                        <outlet property="color" destination="fdD-OV-VUz" id="oOs-AW-4fU"/>
                         <outlet property="colorPicker" destination="LiH-CH-9aX" id="WQP-ec-xAj"/>
-                        <outlet property="compact" destination="Gy4-Ku-Qmr" id="yBS-Ib-KrD"/>
                         <outlet property="container" destination="hcJ-BA-HG8" id="s6M-DP-AVa"/>
                         <outlet property="email" destination="EGO-JJ-3i4" id="cgt-mL-rTy"/>
-                        <outlet property="large" destination="yhB-68-5H6" id="zmn-si-xIy"/>
-                        <outlet property="make" destination="Vpn-0R-njA" id="8pC-Gc-QJV"/>
-                        <outlet property="midsize" destination="kKN-BN-Arr" id="Hrp-vB-MHo"/>
-                        <outlet property="model" destination="iYo-Vp-Ap9" id="t3j-As-FcE"/>
                         <outlet property="pickerContainer" destination="NFk-0S-IG9" id="2Od-T6-zt1"/>
                         <outlet property="pickerView" destination="M8Z-sY-aed" id="SbC-PN-phN"/>
                         <outlet property="profileImage" destination="Uox-EN-Fp6" id="joU-uf-DrN"/>
@@ -4188,7 +4080,6 @@
         <image name="Chat" width="46" height="46"/>
         <image name="Chat Pressed" width="46" height="46"/>
         <image name="Clear" width="1" height="1"/>
-        <image name="Compact Light" width="53" height="27"/>
         <image name="Contact" width="19" height="13"/>
         <image name="Deal" width="40" height="40"/>
         <image name="Direction Background" width="320" height="205"/>
@@ -4224,8 +4115,6 @@
         <image name="Profile" width="19" height="19"/>
         <image name="Rate" width="24" height="23"/>
         <image name="Recommend Outline" width="131" height="45"/>
-        <image name="SUV Light" width="83" height="32"/>
-        <image name="Sedan Light" width="72" height="27"/>
         <image name="Settings" width="30" height="24"/>
         <image name="Star Blue" width="17" height="16"/>
         <image name="Star Pink" width="17" height="16"/>

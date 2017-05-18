@@ -6,7 +6,7 @@
 //  Copyright (c) 2017 OPA, Inc. All rights reserved.
 //
 
-#import "detailPaymentCell.h"
+#import "DetailPaymentCell.h"
 
 @implementation DetailPaymentCell
 

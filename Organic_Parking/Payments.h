@@ -7,7 +7,7 @@
 //
 
 #import "UserInfo.h"
-#import "detailPaymentCell.h"
+#import "DetailPaymentCell.h"
 #import "DetailPaymentExpiredCell.h"
 #import "AddPaymentCell.h"
 #import "NoFundingSourceHeader.h"
