@@ -3,7 +3,7 @@
 //  Parking
 //
 //  Last modified by Kostas Terzidis on 08/10/15.
-//  Copyright (c) 2015 Organic Parking, Inc. All rights reserved.
+//  Copyright (c) 2017 OPA, Inc. All rights reserved.
 //
 
 #ifndef Parking_definitions_h
@@ -16,7 +16,7 @@
 #define SYSTEM_VERSION_LESS_THAN(v)                 ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
 #define SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(v)     ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedDescending)
 
-//Organic Parking Colors
+//OPA Colors
 #define OP_LIGHT_GRAY_COLOR [UIColor colorWithRed:200/255.0f green:200/255.0f blue:200/255.0f alpha:1.0]
 #define OP_BLUE_COLOR [UIColor colorWithRed:40/255.0f green:212/255.0f blue:202/255.0f alpha:1.0]
 #define OP_PINK_COLOR [UIColor colorWithRed:255/255.0f green:70/255.0f blue:98/255.0f alpha:1.0]

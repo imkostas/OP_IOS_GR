@@ -1,6 +1,6 @@
 //
 //  Last modified by Kostas Terzidis on 08/10/15.
-//  Copyright (c) 2015 Organic Parking, Inc. All rights reserved.
+//  Copyright (c) 2017 OPA, Inc. All rights reserved.
 //
 
 #import "MainViewController.h"
@@ -2504,7 +2504,7 @@
  
  NSLog(@"Showing location alertView");
  UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Location Services Disabled"
- message:@"To continue using Organic Parking, location services must be enabled in settings"
+ message:@"To continue using OPA, location services must be enabled in settings"
  delegate:self
  cancelButtonTitle:@"Change in settings"
  otherButtonTitles:nil];
@@ -2533,7 +2533,7 @@
     if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"8.0")){
         
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Enable Location Services"
-                                                        message:@"To use Organic Parking, location services must be enabled within Settings"
+                                                        message:@"To use OPA, location services must be enabled within Settings"
                                                        delegate:self
                                               cancelButtonTitle:@"Settings"
                                               otherButtonTitles:@"OK", nil];
@@ -2542,7 +2542,7 @@
     } else {
         
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Enable Location Services"
-                                                        message:@"To use Organic Parking, location services must be enabled within Settings"
+                                                        message:@"To use OPA, location services must be enabled within Settings"
                                                        delegate:self
                                               cancelButtonTitle:@"OK"
                                               otherButtonTitles:nil];
@@ -2994,7 +2994,7 @@
              } else {
                  
                  [self dismissedPostView];
-                 [self customAlert:@"Organic Parking is unavailable in this city" withDone:@"OK" withColor:YES withTag:0];
+                 [self customAlert:@"OPA is unavailable in this city" withDone:@"OK" withColor:YES withTag:0];
                  
              }
              

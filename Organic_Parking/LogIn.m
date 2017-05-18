@@ -3,13 +3,13 @@
 //  oParking
 //
 //  Last modified by Kostas Terzidis on 08/10/15.
-//  Copyright (c) 2015 Organic Parking, Inc. All rights reserved.
+//  Copyright (c) 2017 OPA, Inc. All rights reserved.
 
 #import "LogIn.h"
 
 // Enumerates the two different layout states that this LogIn view controller can be presenting:
-// the first is when the logo and ORGANIC PARKING are centered, and the second is when the logo and
-// ORGANIC PARKING are shifted up to make room for the username, password, and Log In elements
+// the first is when the logo and OPA are centered, and the second is when the logo and
+// OPA are shifted up to make room for the username, password, and Log In elements
 typedef NS_ENUM(NSUInteger, LogInLayoutState) {
     LogInLayoutStateLogoCentered,
     LogInLayoutStateLogoShiftedUp

@@ -3,7 +3,7 @@
 //  Parking
 //
 //  Last modified by Kostas Terzidis on 08/10/15.
-//  Copyright (c) 2015 Organic Parking, Inc. All rights reserved.
+//  Copyright (c) 2017 OPA, Inc. All rights reserved.
 //
 
 #import "Menu.h"
@@ -294,7 +294,7 @@
         
         MFMailComposeViewController *mailView = [[MFMailComposeViewController alloc] init];
         mailView.mailComposeDelegate = self;
-        [mailView setSubject:@"Organic Parking Feedback"];
+        [mailView setSubject:@"OPA Feedback"];
         [mailView setMessageBody:@"" isHTML:NO];
         [mailView setToRecipients:[NSArray arrayWithObject:@"support@organicparking.com"]];
         

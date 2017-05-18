@@ -3,7 +3,7 @@
 //  Parking
 //
 //  Last modified by Kostas Terzidis on 08/10/15.
-//  Copyright (c) 2015 Organic Parking, Inc. All rights reserved.
+//  Copyright (c) 2017 OPA, Inc. All rights reserved.
 //
 
 #import "LinkedFundingSourceHeader.h"
