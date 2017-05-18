@@ -684,7 +684,7 @@
         
         [self confirmCancelRequest];
         
-    } else if([self.requestPostButton.titleLabel.text isEqualToString:@"PAY NOW"]){
+    } else if([self.requestPostButton.titleLabel.text isEqualToString:@"PAY CASH"]){
         
         [self sendPayment];
         
@@ -710,7 +710,7 @@
 
 - (void)sendPayment {
     
-    self.customAlert = [[CustomAlert alloc] initWithType:2 withframe:self.view.frame withMessage:[NSString stringWithFormat:@"Your card will be charged $%.2f. Do you confirm this transaction?", self.annotation.price]];
+    self.customAlert = [[CustomAlert alloc] initWithType:2 withframe:self.view.frame withMessage:[NSString stringWithFormat:@"You need to find your seller and pay cash. Do you confirm that you paid?"]];
     [self.customAlert.leftButton setBackgroundColor:OP_LIGHT_GRAY_COLOR];
     [self.customAlert.leftButton setTitle:@"No" forState:UIControlStateNormal];
     [self.customAlert.rightButton setBackgroundColor: OP_BLUE_COLOR];
@@ -2078,49 +2078,50 @@
         [self.starFour setImage:[UIImage imageNamed:@"Gray Star Outline"]];
         [self.starFive setImage:[UIImage imageNamed:@"Gray Star Outline"]];
     }
-    
+ 
     switch (annotation.details) {
-        case 0:
-            [self.mySpotMeter setImage:[UIImage imageNamed:@"Meter Post Inactive"]];
-            [self.mySpotPermit setImage:[UIImage imageNamed:@"Permit Post Inactive"]];
-            [self.mySpotTimeLimit setImage:[UIImage imageNamed:@"Time Post Inactive"]];
-            break;
-        case 1:
-            [self.mySpotMeter setImage:[UIImage imageNamed:@"Meter Post Inactive"]];
-            [self.mySpotPermit setImage:[UIImage imageNamed:@"Permit Post Inactive"]];
-            [self.mySpotTimeLimit setImage:[UIImage imageNamed:@"Time Post Active"]];
-            break;
-        case 2:
-            [self.mySpotMeter setImage:[UIImage imageNamed:@"Meter Post Inactive"]];
-            [self.mySpotPermit setImage:[UIImage imageNamed:@"Permit Post Active"]];
-            [self.mySpotTimeLimit setImage:[UIImage imageNamed:@"Time Post Inactive"]];
-            break;
-        case 3:
-            [self.mySpotMeter setImage:[UIImage imageNamed:@"Meter Post Inactive"]];
-            [self.mySpotPermit setImage:[UIImage imageNamed:@"Permit Post Active"]];
-            [self.mySpotTimeLimit setImage:[UIImage imageNamed:@"Time Post Active"]];
-            break;
-        case 4:
-            [self.mySpotMeter setImage:[UIImage imageNamed:@"Meter Post Active"]];
-            [self.mySpotPermit setImage:[UIImage imageNamed:@"Permit Post Inactive"]];
-            [self.mySpotTimeLimit setImage:[UIImage imageNamed:@"Time Post Inactive"]];
-            break;
-        case 5:
-            [self.mySpotMeter setImage:[UIImage imageNamed:@"Meter Post Active"]];
-            [self.mySpotPermit setImage:[UIImage imageNamed:@"Permit Post Inactive"]];
-            [self.mySpotTimeLimit setImage:[UIImage imageNamed:@"Time Post Active"]];
-            break;
-        case 6:
-            [self.mySpotMeter setImage:[UIImage imageNamed:@"Meter Post Active"]];
-            [self.mySpotPermit setImage:[UIImage imageNamed:@"Permit Post Active"]];
-            [self.mySpotTimeLimit setImage:[UIImage imageNamed:@"Time Post Inactive"]];
-            break;
-        case 7:
-            [self.mySpotMeter setImage:[UIImage imageNamed:@"Meter Post Active"]];
-            [self.mySpotPermit setImage:[UIImage imageNamed:@"Permit Post Active"]];
-            [self.mySpotTimeLimit setImage:[UIImage imageNamed:@"Time Post Active"]];
-            break;
-            
+    case 0:
+    [self.mySpotMeter setImage:[UIImage imageNamed:@"Vehicle Inactive"]];
+    [self.mySpotPermit setImage:[UIImage imageNamed:@"Seat Inactive"]];
+    [self.mySpotTimeLimit setImage:[UIImage imageNamed:@"Stand Inactive"]];
+    break;
+    case 1:
+    [self.mySpotMeter setImage:[UIImage imageNamed:@"Vehicle Inactive"]];
+    [self.mySpotPermit setImage:[UIImage imageNamed:@"Seat Inactive"]];
+    [self.mySpotTimeLimit setImage:[UIImage imageNamed:@"Stand Active"]];
+    break;
+    case 2:
+    [self.mySpotMeter setImage:[UIImage imageNamed:@"Vehicle Inactive"]];
+    [self.mySpotPermit setImage:[UIImage imageNamed:@"Seat Active"]];
+    [self.mySpotTimeLimit setImage:[UIImage imageNamed:@"Stand Inactive"]];
+    break;
+    case 3:
+    [self.mySpotMeter setImage:[UIImage imageNamed:@"Vehicle Inactive"]];
+    [self.mySpotPermit setImage:[UIImage imageNamed:@"Seat Active"]];
+    [self.mySpotTimeLimit setImage:[UIImage imageNamed:@"Stand Active"]];
+    break;
+    case 4:
+    [self.mySpotMeter setImage:[UIImage imageNamed:@"Vehicle Active"]];
+    [self.mySpotPermit setImage:[UIImage imageNamed:@"Seat Inactive"]];
+    [self.mySpotTimeLimit setImage:[UIImage imageNamed:@"Stand Inactive"]];
+    break;
+    case 5:
+    [self.mySpotMeter setImage:[UIImage imageNamed:@"Vehicle Active"]];
+    [self.mySpotPermit setImage:[UIImage imageNamed:@"Seat Inactive"]];
+    [self.mySpotTimeLimit setImage:[UIImage imageNamed:@"Stand Active"]];
+    break;
+    case 6:
+    [self.mySpotMeter setImage:[UIImage imageNamed:@"Vehicle Active"]];
+    [self.mySpotPermit setImage:[UIImage imageNamed:@"Seat Active"]];
+    [self.mySpotTimeLimit setImage:[UIImage imageNamed:@"Stand Inactive"]];
+    break;
+    case 7:
+    [self.mySpotMeter setImage:[UIImage imageNamed:@"Vehicle Active"]];
+    [self.mySpotPermit setImage:[UIImage imageNamed:@"Seat Active"]];
+    [self.mySpotTimeLimit setImage:[UIImage imageNamed:@"Stand Active"]];
+    break;
+
+    
         default:
             NSLog(@"Details weren't properly stored");
             break;
@@ -2314,60 +2315,62 @@
             
         default:
             NSLog(@"Car size wasn't stored correctly");
-            [self.requestCarSize setImage:[UIImage imageNamed:@"SUV Blue"]];
-            [self.requestCarSize setFrame:CGRectMake(33.5, 152, 61, 24)];
+            [self.requestCarSize setImage:[UIImage imageNamed:@"Logo"]];  //&&&&&&& @"SUV Blue"
+            [self.requestCarSize setFrame:CGRectMake(50, 152, 30, 30)];
             break;
     }
     
-    switch (annotation.details) {
-        case 0:
-            [self.requestMeter setImage:[UIImage imageNamed:@"Meter Gray"]];
-            [self.requestPermit setImage:[UIImage imageNamed:@"Permit Gray"]];
-            [self.requestTimeLimit setImage:[UIImage imageNamed:@"Time Gray"]];
-            break;
-        case 1:
-            [self.requestMeter setImage:[UIImage imageNamed:@"Meter Gray"]];
-            [self.requestPermit setImage:[UIImage imageNamed:@"Permit Gray"]];
-            [self.requestTimeLimit setImage:[UIImage imageNamed:@"Time Blue"]];
-            break;
-        case 2:
-            [self.requestMeter setImage:[UIImage imageNamed:@"Meter Gray"]];
-            [self.requestPermit setImage:[UIImage imageNamed:@"Permit Blue"]];
-            [self.requestTimeLimit setImage:[UIImage imageNamed:@"Time Gray"]];
-            break;
-        case 3:
-            [self.requestMeter setImage:[UIImage imageNamed:@"Meter Gray"]];
-            [self.requestPermit setImage:[UIImage imageNamed:@"Permit Blue"]];
-            [self.requestTimeLimit setImage:[UIImage imageNamed:@"Time Blue"]];
-            break;
-        case 4:
-            [self.requestMeter setImage:[UIImage imageNamed:@"Meter Blue"]];
-            [self.requestPermit setImage:[UIImage imageNamed:@"Permit Gray"]];
-            [self.requestTimeLimit setImage:[UIImage imageNamed:@"Time Gray"]];
-            break;
-        case 5:
-            [self.requestMeter setImage:[UIImage imageNamed:@"Meter Blue"]];
-            [self.requestPermit setImage:[UIImage imageNamed:@"Permit Gray"]];
-            [self.requestTimeLimit setImage:[UIImage imageNamed:@"Time Blue"]];
-            break;
-        case 6:
-            [self.requestMeter setImage:[UIImage imageNamed:@"Meter Blue"]];
-            [self.requestPermit setImage:[UIImage imageNamed:@"Permit Blue"]];
-            [self.requestTimeLimit setImage:[UIImage imageNamed:@"Time Gray"]];
-            break;
-        case 7:
-            [self.requestMeter setImage:[UIImage imageNamed:@"Meter Blue"]];
-            [self.requestPermit setImage:[UIImage imageNamed:@"Permit Blue"]];
-            [self.requestTimeLimit setImage:[UIImage imageNamed:@"Time Blue"]];
-            break;
-            
-        default:
-            NSLog(@"Details weren't properly stored");
-            [self.requestMeter setImage:[UIImage imageNamed:@"Meter Gray"]];
-            [self.requestPermit setImage:[UIImage imageNamed:@"Permit Gray"]];
-            [self.requestTimeLimit setImage:[UIImage imageNamed:@"Time Gray"]];
-            break;
-    }
+
+     switch (annotation.details) {
+     case 0:
+     [self.requestMeter setImage:[UIImage imageNamed:@"Meter Gray"]];
+     [self.requestPermit setImage:[UIImage imageNamed:@"Permit Gray"]];
+     [self.requestTimeLimit setImage:[UIImage imageNamed:@"Time Gray"]];
+     break;
+     case 1:
+     [self.requestMeter setImage:[UIImage imageNamed:@"Meter Gray"]];
+     [self.requestPermit setImage:[UIImage imageNamed:@"Permit Gray"]];
+     [self.requestTimeLimit setImage:[UIImage imageNamed:@"Time Blue"]];
+     break;
+     case 2:
+     [self.requestMeter setImage:[UIImage imageNamed:@"Meter Gray"]];
+     [self.requestPermit setImage:[UIImage imageNamed:@"Permit Blue"]];
+     [self.requestTimeLimit setImage:[UIImage imageNamed:@"Time Gray"]];
+     break;
+     case 3:
+     [self.requestMeter setImage:[UIImage imageNamed:@"Meter Gray"]];
+     [self.requestPermit setImage:[UIImage imageNamed:@"Permit Blue"]];
+     [self.requestTimeLimit setImage:[UIImage imageNamed:@"Time Blue"]];
+     break;
+     case 4:
+     [self.requestMeter setImage:[UIImage imageNamed:@"Meter Blue"]];
+     [self.requestPermit setImage:[UIImage imageNamed:@"Permit Gray"]];
+     [self.requestTimeLimit setImage:[UIImage imageNamed:@"Time Gray"]];
+     break;
+     case 5:
+     [self.requestMeter setImage:[UIImage imageNamed:@"Meter Blue"]];
+     [self.requestPermit setImage:[UIImage imageNamed:@"Permit Gray"]];
+     [self.requestTimeLimit setImage:[UIImage imageNamed:@"Time Blue"]];
+     break;
+     case 6:
+     [self.requestMeter setImage:[UIImage imageNamed:@"Meter Blue"]];
+     [self.requestPermit setImage:[UIImage imageNamed:@"Permit Blue"]];
+     [self.requestTimeLimit setImage:[UIImage imageNamed:@"Time Gray"]];
+     break;
+     case 7:
+     [self.requestMeter setImage:[UIImage imageNamed:@"Meter Blue"]];
+     [self.requestPermit setImage:[UIImage imageNamed:@"Permit Blue"]];
+     [self.requestTimeLimit setImage:[UIImage imageNamed:@"Time Blue"]];
+     break;
+     
+     default:
+     NSLog(@"Details weren't properly stored");
+     [self.requestMeter setImage:[UIImage imageNamed:@"Meter Gray"]];
+     [self.requestPermit setImage:[UIImage imageNamed:@"Permit Gray"]];
+     [self.requestTimeLimit setImage:[UIImage imageNamed:@"Time Gray"]];
+     break;
+     }
+    
     
     self.requestPosterCarInfo.text = [NSString stringWithFormat:@"%@ %@ %@", annotation.car_color, annotation.car_make, annotation.car_model];
     
