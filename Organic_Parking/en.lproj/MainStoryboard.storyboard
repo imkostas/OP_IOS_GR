@@ -801,51 +801,51 @@
                                         <rect key="frame" x="0.0" y="272" width="320" height="180"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9er-K1-YJz" userLabel="meter">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9er-K1-YJz" userLabel="vehicle">
                                                 <rect key="frame" x="50" y="35" width="60" height="65"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" backgroundImage="Meter Inactive">
                                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="postMeter:" destination="C8u-ok-f92" eventType="touchUpInside" id="emn-pS-w8t"/>
+                                                    <action selector="postVehicle:" destination="C8u-ok-f92" eventType="touchUpInside" id="XUK-mF-XwU"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cQ8-AC-usx" userLabel="permit">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cQ8-AC-usx" userLabel="seat">
                                                 <rect key="frame" x="130" y="35" width="60" height="65"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" backgroundImage="Permit Inactive">
                                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="postPermit:" destination="C8u-ok-f92" eventType="touchUpInside" id="fo6-hW-x7a"/>
+                                                    <action selector="postSeat:" destination="C8u-ok-f92" eventType="touchUpInside" id="45M-Yi-Kmx"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="pAm-Ms-nVn" userLabel="time limit">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="pAm-Ms-nVn" userLabel="stand">
                                                 <rect key="frame" x="210" y="35" width="60" height="65"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" backgroundImage="Time Inactive">
                                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="postTimeLimit:" destination="C8u-ok-f92" eventType="touchUpInside" id="YCZ-91-by7"/>
+                                                    <action selector="postStand:" destination="C8u-ok-f92" eventType="touchUpInside" id="Tla-Xu-u4J"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="vehicle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aUM-H7-Cu4">
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="vehicle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aUM-H7-Cu4" userLabel="Vehicle Label">
                                                 <rect key="frame" x="40" y="99" width="80" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="16"/>
                                                 <color key="textColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="seat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Cyg-pj-FLK">
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="seat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Cyg-pj-FLK" userLabel="Seat Label">
                                                 <rect key="frame" x="120" y="99" width="80" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="16"/>
                                                 <color key="textColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="stand" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="niP-Ok-LFY">
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="stand" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="niP-Ok-LFY" userLabel="Stand Label">
                                                 <rect key="frame" x="200" y="99" width="80" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="16"/>
@@ -927,22 +927,22 @@
                         <outlet property="clearFiltersBtn" destination="kDU-vn-ucR" id="BVJ-no-Pzo"/>
                         <outlet property="datePicker" destination="Stu-Hy-IUG" id="NlY-ND-HUo"/>
                         <outlet property="dayLabel" destination="5PQ-RC-ZdI" id="zXY-y6-Q7z"/>
-                        <outlet property="meterLabel" destination="aUM-H7-Cu4" id="ZgU-p9-KdE"/>
-                        <outlet property="permitLabel" destination="Cyg-pj-FLK" id="VTQ-Lx-25A"/>
-                        <outlet property="postMeter" destination="9er-K1-YJz" id="jQg-KP-3pJ"/>
-                        <outlet property="postPermit" destination="cQ8-AC-usx" id="J2t-51-n47"/>
-                        <outlet property="postTimeLimit" destination="pAm-Ms-nVn" id="bNQ-lR-evU"/>
+                        <outlet property="postSeat" destination="cQ8-AC-usx" id="DEL-fS-uvF"/>
+                        <outlet property="postStand" destination="pAm-Ms-nVn" id="F3D-s8-5f0"/>
+                        <outlet property="postVehicle" destination="9er-K1-YJz" id="xTC-Ca-oFO"/>
                         <outlet property="scrollView" destination="niS-ye-xox" id="IMe-1V-XnQ"/>
                         <outlet property="searchWindow" destination="32r-AF-FEd" id="iRK-PO-dQf"/>
+                        <outlet property="seatLabel" destination="Cyg-pj-FLK" id="fcv-gx-rVg"/>
                         <outlet property="setTimeFilterView" destination="QJa-GP-DXs" id="91S-SJ-NSr"/>
                         <outlet property="setTimeFilterViewContents" destination="DyN-y9-mU0" id="wpr-LF-Juy"/>
                         <outlet property="slider" destination="ad7-8h-V7h" id="zEY-ue-Arc"/>
+                        <outlet property="standLabel" destination="niP-Ok-LFY" id="b0f-kx-JpL"/>
                         <outlet property="timeFilterView" destination="Ml1-ZS-3Dv" id="sa7-6j-Fzk"/>
                         <outlet property="timeLabel" destination="fsw-ve-hHB" id="j4s-Eu-ecs"/>
-                        <outlet property="timeLimitLabel" destination="niP-Ok-LFY" id="OUb-an-mFL"/>
                         <outlet property="topBar" destination="WUm-5x-F0T" id="fcT-Ul-u1d"/>
                         <outlet property="topBarTitle" destination="wb5-EC-JKb" id="m7K-jA-vpn"/>
                         <outlet property="updateFiltersBtn" destination="DYN-c4-L7s" id="Gqb-pp-JX8"/>
+                        <outlet property="vehicleLabel" destination="aUM-H7-Cu4" id="FML-KE-o67"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jpl-Z4-BFc" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -3440,51 +3440,51 @@
                                         <rect key="frame" x="640" y="0.0" width="320" height="180"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="rhU-4I-tpI" userLabel="meter">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="rhU-4I-tpI" userLabel="vehicle">
                                                 <rect key="frame" x="50" y="35" width="60" height="65"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" backgroundImage="Meter Inactive">
                                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="postMeter:" destination="RED-PD-qk2" eventType="touchUpInside" id="mGy-nu-sDv"/>
+                                                    <action selector="postVehicle:" destination="RED-PD-qk2" eventType="touchUpInside" id="WHW-Sk-3k2"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="RBM-IV-26l" userLabel="permit">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="RBM-IV-26l" userLabel="seat">
                                                 <rect key="frame" x="130" y="35" width="60" height="65"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" backgroundImage="Permit Inactive">
                                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="postPermit:" destination="RED-PD-qk2" eventType="touchUpInside" id="2ae-oG-nlC"/>
+                                                    <action selector="postSeat:" destination="RED-PD-qk2" eventType="touchUpInside" id="tcK-ek-kFd"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Bi9-uq-sZZ" userLabel="time limit">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Bi9-uq-sZZ" userLabel="stand">
                                                 <rect key="frame" x="210" y="35" width="60" height="65"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" backgroundImage="Time Inactive">
                                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="postTimeLimit:" destination="RED-PD-qk2" eventType="touchUpInside" id="B8O-3N-4I5"/>
+                                                    <action selector="postStand:" destination="RED-PD-qk2" eventType="touchUpInside" id="yb9-b6-g2u"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="vehicle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GQM-sa-at8">
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="vehicle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GQM-sa-at8" userLabel="Vehicle Label">
                                                 <rect key="frame" x="40" y="99" width="80" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="16"/>
                                                 <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="seat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bmN-yh-nuW">
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="seat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bmN-yh-nuW" userLabel="Seat Label">
                                                 <rect key="frame" x="120" y="99" width="80" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="16"/>
                                                 <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="stand" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="COf-St-p7m">
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="stand" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="COf-St-p7m" userLabel="Stand Label">
                                                 <rect key="frame" x="200" y="99" width="80" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="16"/>
@@ -3584,26 +3584,26 @@
                     <toolbarItems/>
                     <connections>
                         <outlet property="datePicker" destination="7mt-0o-REB" id="RKx-UZ-ELq"/>
-                        <outlet property="meterLabel" destination="GQM-sa-at8" id="2DB-Fv-0HO"/>
                         <outlet property="pageController" destination="ygC-ld-BVD" id="XHU-4O-zDP"/>
-                        <outlet property="permitLabel" destination="bmN-yh-nuW" id="vjh-Uh-T5q"/>
                         <outlet property="postBackground" destination="jdH-2g-dWY" id="c32-11-0Px"/>
                         <outlet property="postBackgroundBottom" destination="jhZ-o3-of1" id="hDC-qZ-iqq"/>
                         <outlet property="postDate" destination="WEV-aU-ylF" id="5V0-Fv-xCy"/>
                         <outlet property="postDetailsContainer" destination="cw6-oA-YpH" id="EaT-Q3-JMM"/>
                         <outlet property="postMeridiems" destination="b0c-AW-nwq" id="jhJ-Vz-m8D"/>
-                        <outlet property="postMeter" destination="rhU-4I-tpI" id="d3h-eu-tKv"/>
-                        <outlet property="postPermit" destination="RBM-IV-26l" id="sEd-t2-VFA"/>
                         <outlet property="postPrice" destination="6eX-Op-dHf" id="dzF-tb-IAG"/>
                         <outlet property="postPriceContainer" destination="Cy7-BE-tfV" id="JBd-m5-nFa"/>
+                        <outlet property="postSeat" destination="RBM-IV-26l" id="AzH-Bw-2FR"/>
                         <outlet property="postSpotContainer" destination="bCB-Bq-9kp" id="Qfc-t0-Lqd"/>
+                        <outlet property="postStand" destination="Bi9-uq-sZZ" id="oeG-23-g1t"/>
                         <outlet property="postTime" destination="bGq-Ys-AG3" id="Coz-5W-TUD"/>
                         <outlet property="postTimeContainer" destination="5wA-75-rli" id="brj-rR-E6B"/>
                         <outlet property="postTimeContainerView" destination="d2O-J1-skd" id="WTV-nz-zGK"/>
-                        <outlet property="postTimeLimit" destination="Bi9-uq-sZZ" id="MOe-9E-YOS"/>
                         <outlet property="postTimeView" destination="VWV-FC-Mld" id="LH2-zw-MqV"/>
+                        <outlet property="postVehicle" destination="rhU-4I-tpI" id="ywa-kL-Hxd"/>
                         <outlet property="scrollView" destination="vpr-PV-cEm" id="VOQ-FM-iCX"/>
-                        <outlet property="timeLimitLabel" destination="COf-St-p7m" id="FB2-og-1rs"/>
+                        <outlet property="seatLabel" destination="bmN-yh-nuW" id="z1A-Px-VAK"/>
+                        <outlet property="standLabel" destination="COf-St-p7m" id="eSw-Av-DRX"/>
+                        <outlet property="vehicleLabel" destination="GQM-sa-at8" id="9Vy-Ww-reQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="shE-IV-Oz6" userLabel="First Responder" sceneMemberID="firstResponder"/>

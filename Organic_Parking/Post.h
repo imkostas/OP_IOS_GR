@@ -26,12 +26,13 @@
 @property (strong, nonatomic) IBOutlet UILabel *postMeridiems; //displays AM or PM
 @property (strong, nonatomic) IBOutlet UILabel *postDate; //displays post date
 @property (strong, nonatomic) IBOutlet UITextField *postPrice; //displays post price
-@property (strong, nonatomic) IBOutlet UIButton *postMeter; //set if post is metered or not
-@property (strong, nonatomic) IBOutlet UILabel *meterLabel; //changes color when active
-@property (strong, nonatomic) IBOutlet UIButton *postPermit; //set if post requires permit or not
-@property (strong, nonatomic) IBOutlet UILabel *permitLabel; //changes color when active
-@property (strong, nonatomic) IBOutlet UIButton *postTimeLimit; //set if post has time limit or not
-@property (strong, nonatomic) IBOutlet UILabel *timeLimitLabel; //changes color when active
+
+@property (strong, nonatomic) IBOutlet UIButton *postVehicle; //set if post is vehicle or not
+@property (strong, nonatomic) IBOutlet UILabel *vehicleLabel; //changes color when active
+@property (strong, nonatomic) IBOutlet UIButton *postSeat; //set if post is seat or not
+@property (strong, nonatomic) IBOutlet UILabel *seatLabel; //changes color when active
+@property (strong, nonatomic) IBOutlet UIButton *postStand; //set if post is stand or not
+@property (strong, nonatomic) IBOutlet UILabel *standLabel; //changes color when active
 
 //view for setting post time
 @property (strong, nonatomic) IBOutlet UIView *postTimeView; //view for holding contents of container view

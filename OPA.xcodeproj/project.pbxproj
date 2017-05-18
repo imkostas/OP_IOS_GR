@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3116A7B91ECDE1F00001B794 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3116A7B81ECDE1F00001B794 /* MainStoryboard_iPad.storyboard */; };
 		31307E7C179452E70029F7D8 /* LogIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 31307E7B179450B50029F7D8 /* LogIn.m */; };
 		31622FD417AAA65200E3E425 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31622FD317AAA65200E3E425 /* SystemConfiguration.framework */; };
-		317189681B7402CD00FB856B /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 317189671B7402CD00FB856B /* MainStoryboard_iPad.storyboard */; };
 		4905FAAE1A1E8DB6009A9B9A /* DetailPaymentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4905FAAD1A1E8DB6009A9B9A /* DetailPaymentCell.m */; };
 		4905FAB11A1E8DD2009A9B9A /* AddPaymentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4905FAB01A1E8DD2009A9B9A /* AddPaymentCell.m */; };
 		4905FAB41A1EF475009A9B9A /* PaymentMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 4905FAB31A1EF475009A9B9A /* PaymentMethod.m */; };
@@ -91,10 +91,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3116A7B81ECDE1F00001B794 /* MainStoryboard_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		31307E7A179450B50029F7D8 /* LogIn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogIn.h; sourceTree = "<group>"; };
 		31307E7B179450B50029F7D8 /* LogIn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = LogIn.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		31622FD317AAA65200E3E425 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		317189671B7402CD00FB856B /* MainStoryboard_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		317193F41EC6DA9F00D4C494 /* OPA.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OPA.entitlements; sourceTree = "<group>"; };
 		31D0B4ED1E8C566D00DF0E2F /* Parking.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Parking.entitlements; sourceTree = "<group>"; };
 		4905FAAC1A1E8DB6009A9B9A /* DetailPaymentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailPaymentCell.h; sourceTree = "<group>"; };
@@ -462,7 +462,7 @@
 			children = (
 				497064B91A7017640030234B /* Images.xcassets */,
 				496590AD1785193E00287B3C /* MainStoryboard.storyboard */,
-				317189671B7402CD00FB856B /* MainStoryboard_iPad.storyboard */,
+				3116A7B81ECDE1F00001B794 /* MainStoryboard_iPad.storyboard */,
 				49A775D117EA5A84000E0615 /* Delegate */,
 				31307E79179450A20029F7D8 /* Log In */,
 				497F4464181048A600243085 /* Register */,
@@ -818,7 +818,7 @@
 				49A58E0719116D22008EE6A8 /* faqs.plist in Resources */,
 				496590AF1785193E00287B3C /* MainStoryboard.storyboard in Resources */,
 				497064BA1A7017640030234B /* Images.xcassets in Resources */,
-				317189681B7402CD00FB856B /* MainStoryboard_iPad.storyboard in Resources */,
+				3116A7B91ECDE1F00001B794 /* MainStoryboard_iPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
