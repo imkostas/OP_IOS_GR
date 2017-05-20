@@ -50,7 +50,7 @@
     //main
     [self.main setFrame:CGRectMake(self.mainPosition.x, self.container.frame.origin.y, self.container.frame.size.width, self.container.frame.size.height)];
     [self.searchBar setFrame:CGRectMake(self.view.frame.origin.x, TOP_BAR_HEIGHT,
-                                        self.searchBar.frame.size.width, self.searchBar.frame.size.height)];
+                                        self.view.frame.size.width,  self.searchBar.frame.size.height)]; //self.searchBar.frame.size.width,
     [self.searchBarClear setFrame:self.searchBar.frame];
     
     [self.main.layer setShadowOffset:CGSizeMake(0, 0)];
@@ -684,7 +684,7 @@
         
         [self confirmCancelRequest];
         
-    } else if([self.requestPostButton.titleLabel.text isEqualToString:@"PAY CASH"]){
+    } else if([self.requestPostButton.titleLabel.text isEqualToString:@"PAY NOW"]){
         
         [self sendPayment];
         

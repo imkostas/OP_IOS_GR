@@ -30,7 +30,7 @@
     
     //position view objects
     [self.searchBar setFrame:CGRectMake(self.view.frame.origin.x, TOP_BAR_HEIGHT,
-                                        self.searchBar.frame.size.width, self.searchBar.frame.size.height)];
+                                        self.view.frame.size.width, self.searchBar.frame.size.height)];
     [self.tableView setFrame:CGRectMake(self.view.frame.origin.x, self.searchBar.frame.origin.y + self.searchBar.frame.size.height, self.view.frame.size.width, self.view.frame.size.height - (self.searchBar.frame.origin.y + self.searchBar.frame.size.height))];
     
     [self.cancelSearchBtn setFrame:CGRectMake((self.view.frame.size.width - self.cancelSearchBtn.frame.size.width), self.searchBar.frame.origin.y - 1, self.cancelSearchBtn.frame.size.width, self.cancelSearchBtn.frame.size.height)];
