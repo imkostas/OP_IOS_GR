@@ -505,6 +505,9 @@ typedef NS_ENUM(NSUInteger, KeyboardState) {
         // Since we're leaving the login area, we set the layout to its initial state for next time
         layoutState = LogInLayoutStateLogoCentered;
         
+        NSLog(@"LOGGED IN");
+       // [self checkForDuplicateSpots];
+        
         //segue to main view
         LogIn *mainView = [self.storyboard instantiateViewControllerWithIdentifier:@"main"];
         [self.navigationController pushViewController:mainView animated:YES];
@@ -542,6 +545,30 @@ typedef NS_ENUM(NSUInteger, KeyboardState) {
         //make sure all view objects have been positioned correctly - this needs to be done in the event that auto log in fails
         [self setupLogInView];
     }];
+    
+}
+
+- (void)checkForDuplicateSpots {
+    
+    
+    NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys:
+                            self.user.apiKey, @"api_key", self.user.username, @"p_username",
+                            [NSString stringWithFormat:@"%f", self.user.postCoordinate.latitude], @"latitude",
+                            [NSString stringWithFormat:@"%f", self.user.postCoordinate.longitude], @"longitude",
+                            self.user.apiKey, @"api_key", nil];
+    
+    AFHTTPRequestOperationManager *manager =  [AFHTTPRequestOperationManager manager];
+    [manager POST:[NSString stringWithFormat:@"%@checkForDuplicateSpots", self.user.uri] parameters:params
+          success:^(AFHTTPRequestOperation *operation, id responseObject) {
+              
+              NSLog(@"%@", responseObject);
+              
+              
+          } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+              
+              NSLog(@"%@", operation.responseObject);
+              
+          }];
     
 }
 

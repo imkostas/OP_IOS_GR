@@ -57,6 +57,7 @@
 @synthesize userImages;
 
 @synthesize filter;
+@synthesize filterCategories;
 
 @synthesize shouldRefreshMapPins;
 @synthesize shouldPauseRefreshMapPins;
@@ -182,6 +183,7 @@
         
         //initialize filter
         filter = [[DateFilter alloc] init];
+        filterCategories = 7;
         
         //indicates if map should be refreshed
         shouldRefreshMapPins = false;

@@ -1303,7 +1303,7 @@
                  pin.car_make = @""; //[item objectForKey: @"car_make"];
                  pin.car_model = @""; //[item objectForKey: @"car_model"];
                  pin.car_color = @""; //[item objectForKey: @"car_color"];
-                 pin.car_size = 0; //[[item objectForKey:@"car_size"] intValue];
+                 pin.car_size = 1; //[[item objectForKey:@"car_size"] intValue];
                  //&&&&&&&&
                  pin.profile_image = [NSString stringWithFormat:@"%@%@.png", self.user.img_uri, pin.p_username];
                  

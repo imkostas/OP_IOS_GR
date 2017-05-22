@@ -91,6 +91,7 @@
 //filter
 @property (nonatomic, strong) DateFilter *filter;
 @property (nonatomic) unsigned int postDetails;
+@property (nonatomic) unsigned int filterCategories;
 
 //boolean to update map pins
 @property (nonatomic) BOOL shouldRefreshMapPins;

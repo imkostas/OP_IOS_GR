@@ -18,7 +18,7 @@
     
     [super viewWillLayoutSubviews];
     
-    NSLog(@"From Filter SCREEN = %f x %f",self.view.bounds.size.width, self.view.bounds.size.height);
+    //NSLog(@"From Filter SCREEN = %f x %f",self.view.bounds.size.width, self.view.bounds.size.height);
     
     //position view objects
     [self.topBar setFrame:CGRectMake(self.view.bounds.origin.x, self.view.bounds.origin.y, self.topBar.bounds.size.width, TOP_BAR_HEIGHT)];
@@ -30,7 +30,10 @@
     [self.setTimeFilterView setFrame:self.view.bounds];
     [self.setTimeFilterViewContents setFrame:CGRectMake(self.view.bounds.size.width/2 - self.setTimeFilterViewContents.bounds.size.width/2, self.setTimeFilterView.bounds.size.height/2 - self.setTimeFilterViewContents.bounds.size.height/2, self.setTimeFilterViewContents.bounds.size.width, self.setTimeFilterViewContents.bounds.size.height)];
     
-    
+    [self.postVehicle setBackgroundImage:[UIImage imageNamed:@"Vehicle Active"] forState:UIControlStateNormal];
+    [self.postSeat setBackgroundImage:[UIImage imageNamed:@"Seat Active"] forState:UIControlStateNormal];
+    [self.postStand setBackgroundImage:[UIImage imageNamed:@"Stand Active"] forState:UIControlStateNormal];
+    self.user.postDetails = 7;
 }
 
 
@@ -123,7 +126,10 @@
     self.user.shouldRefreshMapPins = YES;
     self.user.filter = [[DateFilter alloc] init];
     
-    self.user.postDetails = 0;
+    [self.postVehicle setBackgroundImage:[UIImage imageNamed:@"Vehicle Active"] forState:UIControlStateNormal];
+    [self.postSeat setBackgroundImage:[UIImage imageNamed:@"Seat Active"] forState:UIControlStateNormal];
+    [self.postStand setBackgroundImage:[UIImage imageNamed:@"Stand Active"] forState:UIControlStateNormal];
+    self.user.postDetails = 7;
     
     [self dismissViewControllerAnimated:YES completion:nil];
     
@@ -236,7 +242,7 @@
     //turn it on and everything else off
     [self.postVehicle setBackgroundImage:[UIImage imageNamed:@"Vehicle Active"] forState:UIControlStateNormal];
     [self.vehicleLabel setTextColor:[UIColor colorWithRed:1.0f green:70/255.0f blue:98/255.0f alpha:1.0]];
-    self.user.postDetails = 1;
+    self.user.postDetails = 4;
     
     [self.postSeat setBackgroundImage:[UIImage imageNamed:@"Seat Inactive"] forState:UIControlStateNormal];
     [self.seatLabel setTextColor:[UIColor colorWithRed:170/255.0f green:170/255.0f blue:170/255.0f alpha:1.0]];
@@ -269,7 +275,7 @@
     
     [self.postStand setBackgroundImage:[UIImage imageNamed:@"Stand Active"] forState:UIControlStateNormal];
     [self.standLabel setTextColor:[UIColor colorWithRed:1.0f green:70/255.0f blue:98/255.0f alpha:1.0]];
-    self.user.postDetails = 3;
+    self.user.postDetails = 1;
     
     [self.postVehicle setBackgroundImage:[UIImage imageNamed:@"Vehicle Inactive"] forState:UIControlStateNormal];
     [self.vehicleLabel setTextColor:[UIColor colorWithRed:170/255.0f green:170/255.0f blue:170/255.0f alpha:1.0]];
