@@ -31,7 +31,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://www.organicparking.com/privacyPolicy.html"]]];
+    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://www.organicparking.com/Greece/privacyPolicy.html"]]];
 }
 
 - (IBAction)cancelView:(id)sender {
