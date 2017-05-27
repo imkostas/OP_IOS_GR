@@ -27,6 +27,7 @@
 @property (strong, nonatomic) IBOutlet UIView *pickerContainer;
 @property (strong, nonatomic) IBOutlet UIPickerView *colorPicker;
 
+
 //profile scroll view and contents
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView; //scroll view to hold profile contents
 @property (strong, nonatomic) IBOutlet UIView *container;
@@ -47,5 +48,6 @@
 @property (nonatomic, strong) UITapGestureRecognizer *tap; //dismisses keyboard
 @property (nonatomic, strong) UIImagePickerController *imagePicker; //used to select/take profile image
 @property (nonatomic, strong) NSArray *arrayOfColors; //list of car colors
+@property (nonatomic, strong) UIPopoverController *popOver;  //popover only for iPad
 
 @end

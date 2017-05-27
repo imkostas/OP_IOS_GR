@@ -565,8 +565,32 @@
         
     }
     
-    //present image picker based on source type
-    [self presentViewController:self.imagePicker animated:YES completion:nil];
+    if([[[UIDevice currentDevice] systemVersion] floatValue]>=8.0)
+    {
+        [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+            // Place image picker on the screen
+            [self presentViewController:self.imagePicker animated:YES completion:nil];
+        }];
+    }
+    else
+    {
+        [self presentViewController:self.imagePicker animated:YES completion:nil];
+    }
+    
+//    // check if it is an iPad; then you need a popover
+//    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+//        UIPopoverController *popover = [[UIPopoverController alloc] initWithContentViewController:self.imagePicker];
+//        [popover presentPopoverFromRect:self.view.bounds inView:self.view permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+//        NSLog(@"this is an IPAD");
+//        self.popOver = popover;
+//    } else {
+//        //present image picker based on source type
+//        [self presentViewController:self.imagePicker animated:YES completion:nil];
+//    }
+    
+    
+//    //present image picker based on source type
+//    [self presentViewController:self.imagePicker animated:YES completion:nil];
     
 }
 
