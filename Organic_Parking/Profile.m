@@ -376,13 +376,13 @@
         }
         
         //setup alert and ask user to confirm log out action
-        self.customAlert = [[CustomAlert alloc] initWithType:2 withframe:self.view.frame withMessage:@"Leave without saving?"];
+        self.customAlert = [[CustomAlert alloc] initWithType:2 withframe:self.view.frame withMessage:@"Θές να φύγεις χωρίς να σώσεις;"];
         
         [self.customAlert.leftButton setBackgroundColor:[UIColor colorWithRed:200/255.0f green:200/255.0f blue:200/255.0f alpha:1.0]];
-        [self.customAlert.leftButton setTitle:@"No" forState:UIControlStateNormal];
+        [self.customAlert.leftButton setTitle:@"Όχι" forState:UIControlStateNormal];
         
         [self.customAlert.rightButton setBackgroundColor:[UIColor colorWithRed:40/255.0f green:212/255.0f blue:202/255.0f alpha:1.0]];
-        [self.customAlert.rightButton setTitle:@"Yes" forState:UIControlStateNormal];
+        [self.customAlert.rightButton setTitle:@"Ναι" forState:UIControlStateNormal];
         
         self.customAlert.customAlertDelegate = self;
         self.customAlert.tag = 1;
@@ -474,7 +474,7 @@
 - (void)getPickerSource {
     
     //create actionsheet prompting user how they want to add their profile photo
-    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"Take Photo", @"Choose Existing", nil];
+    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"Πάρε φωτό", @"Διάλεξε από το άλμπουμ", nil];
     actionSheet.actionSheetStyle = UIActionSheetStyleDefault;
     
     // The action sheet needs to be presented differently between iPad and iPhone
@@ -514,11 +514,11 @@
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
     
     //if they want to take photo, set source type to camera - otherwise, set to photo library
-    if ([[actionSheet buttonTitleAtIndex:buttonIndex] isEqualToString:@"Take Photo"]) {
+    if ([[actionSheet buttonTitleAtIndex:buttonIndex] isEqualToString:@"Πάρε φωτό"]) {
         
         [self takeCarImage:UIImagePickerControllerSourceTypeCamera];
         
-    } else if ([[actionSheet buttonTitleAtIndex:buttonIndex] isEqualToString:@"Choose Existing"]) {
+    } else if ([[actionSheet buttonTitleAtIndex:buttonIndex] isEqualToString:@"Διάλεξε από το άλμπουμ"]) {
         
         [self takeCarImage:UIImagePickerControllerSourceTypePhotoLibrary];
         
@@ -540,7 +540,7 @@
         }
         else {
             
-            [self customAlert:@"Your device is not capable of taking photos. Try choosing an existing image from your photo library." withDone:@"OK" withTag:0];
+            [self customAlert:@"Η συσκευή σου δεν μπορεί να τραβήξει φωτογραφίες. Διάλεξε μιά από το άλμπουμ σου" withDone:@"OK" withTag:0];
             
         }
         
@@ -555,7 +555,7 @@
         }
         else {
             
-            [self customAlert:@"We couldn't access your photo library" withDone:@"OK" withTag:0];
+            [self customAlert:@"Δεν μπορούμε να βρούμε το άλμπουμ σου" withDone:@"OK" withTag:0];
             
         }
         
@@ -565,6 +565,7 @@
         
     }
     
+    // check for version 8+
     if([[[UIDevice currentDevice] systemVersion] floatValue]>=8.0)
     {
         [[NSOperationQueue mainQueue] addOperationWithBlock:^{

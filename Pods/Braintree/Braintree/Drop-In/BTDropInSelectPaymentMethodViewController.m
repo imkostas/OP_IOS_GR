@@ -2,7 +2,7 @@
 #import "BTDropInUtil.h"
 #import "BTUIViewUtil.h"
 #import "BTUI.h"
-#import "BTDropInViewController.h"
+#import "BTDropinViewController.h"
 #import "BTDropInLocalizedString.h"
 #import "BTUILocalizedString.h"
 

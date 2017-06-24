@@ -180,7 +180,7 @@
             [self.user.keychain setObject:[responseObject valueForKey:@"hash"] forKey:(__bridge id)(kSecValueData)];
             
             //notify user their password has been changed
-            [self customAlert:@"Your password has been changed" withDone:@"OK"];
+            [self customAlert:@"Αλλάξαμε το συνθηματικό σου" withDone:@"OK"];
             [self.customAlert setTag:1];
             
         } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
@@ -197,7 +197,7 @@
                 
             } else {
                 
-                [self customAlert:@"Unable to change your password" withDone:@"OK"];
+                [self customAlert:@"Δεν μπορέσαμε να αλλάξουμε το συνθηματικό σου" withDone:@"OK"];
                 
             }
             

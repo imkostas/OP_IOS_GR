@@ -1,4 +1,4 @@
-#import "BTAnalyticsMetadata.h"
+#import "BTAnalyticsMetaData.h"
 #import "BTClient.h"
 
 #import "BTKeychain.h"

@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3116A7B91ECDE1F00001B794 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3116A7B81ECDE1F00001B794 /* MainStoryboard_iPad.storyboard */; };
 		31307E7C179452E70029F7D8 /* LogIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 31307E7B179450B50029F7D8 /* LogIn.m */; };
+		315D81791EDFB62A0073716F /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 315D81781EDFB62A0073716F /* MainStoryboard_iPad.storyboard */; };
+		315D817B1EDFB6470073716F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 315D817A1EDFB6470073716F /* Images.xcassets */; };
 		31622FD417AAA65200E3E425 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31622FD317AAA65200E3E425 /* SystemConfiguration.framework */; };
+		317771771EE0A2DF006DC7F0 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 317771761EE0A2DF006DC7F0 /* libsqlite3.dylib */; };
+		317771791EE0A2F5006DC7F0 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 317771781EE0A2F5006DC7F0 /* libz.1.dylib */; };
 		4905FAAE1A1E8DB6009A9B9A /* DetailPaymentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4905FAAD1A1E8DB6009A9B9A /* DetailPaymentCell.m */; };
 		4905FAB11A1E8DD2009A9B9A /* AddPaymentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4905FAB01A1E8DD2009A9B9A /* AddPaymentCell.m */; };
 		4905FAB41A1EF475009A9B9A /* PaymentMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 4905FAB31A1EF475009A9B9A /* PaymentMethod.m */; };
@@ -45,7 +48,6 @@
 		496590AF1785193E00287B3C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 496590AD1785193E00287B3C /* MainStoryboard.storyboard */; };
 		496590B21785193E00287B3C /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 496590B11785193E00287B3C /* MainViewController.m */; };
 		4966524119415D000036A7E6 /* PaymentDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 4966524019415D000036A7E6 /* PaymentDetails.m */; };
-		497064BA1A7017640030234B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 497064B91A7017640030234B /* Images.xcassets */; };
 		49778DC1193C099E0045006B /* Filter.m in Sources */ = {isa = PBXBuildFile; fileRef = 49778DC0193C099E0045006B /* Filter.m */; };
 		497BC241182EE45900A29D8E /* Privacy.m in Sources */ = {isa = PBXBuildFile; fileRef = 497BC240182EE45900A29D8E /* Privacy.m */; };
 		497BDF4E18CE3AA80020791E /* Chat.m in Sources */ = {isa = PBXBuildFile; fileRef = 497BDF4D18CE3AA80020791E /* Chat.m */; };
@@ -70,7 +72,6 @@
 		49B944FC18A431B100FBD8C4 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49B944FB18A431B100FBD8C4 /* CoreImage.framework */; };
 		49BC88E61938F6CA002F461E /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = 49BC88E51938F6CA002F461E /* Menu.m */; };
 		49C0CC611A3653890062D8D2 /* BraintreeUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C0CC601A3653890062D8D2 /* BraintreeUser.m */; };
-		49C2340518C90823005B1487 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C2340418C90823005B1487 /* libsqlite3.dylib */; };
 		49C2340718C9083D005B1487 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C2340618C9083D005B1487 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		49C3FFEB18158CAB00EF5C7A /* ChangePassword.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C3FFEA18158CAB00EF5C7A /* ChangePassword.m */; };
 		49CE72E3195A0E04003A1BF9 /* CustomAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CE72E2195A0E04003A1BF9 /* CustomAlert.m */; };
@@ -79,24 +80,26 @@
 		49E17AE71938D46900DBE945 /* RequesterInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E17AE61938D46900DBE945 /* RequesterInfo.m */; };
 		49E1C94017985D9B000FBFEC /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E1C93F17985D9B000FBFEC /* AddressBook.framework */; };
 		49E86C5317C3D4F800BA9C2F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E86C5217C3D4F800BA9C2F /* AudioToolbox.framework */; };
-		49EB4E221843EA800070A25F /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 49EB4E1A1843E8330070A25F /* libz.dylib */; };
 		49EC0FB0193CCFBB00104F78 /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EC0FAF193CCFBB00104F78 /* Post.m */; };
 		49EC0FD4193CDF2D00104F78 /* Payments.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EC0FD3193CDF2D00104F78 /* Payments.m */; };
 		49EC0FE4193D2D2800104F78 /* Profile.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EC0FE3193D2D2800104F78 /* Profile.m */; };
 		49F3734417A18A6400BC16F1 /* Register.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F3734317A18A6400BC16F1 /* Register.m */; };
 		49F8BF42191C1AC500E96A70 /* todos.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F8BF41191C1AC500E96A70 /* todos.m */; };
 		49FC13FC1A7C0816005D9375 /* DetailPaymentExpiredCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49FC13FB1A7C0816005D9375 /* DetailPaymentExpiredCell.m */; };
-		6FCDB898DC1AAAA8AF78039E /* libPods-Parking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A3EFFE6E3055605AE1B4D2E /* libPods-Parking.a */; };
 		8BB58F061A2D5ACC009724FC /* TermsPrivacy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB58F051A2D5ACC009724FC /* TermsPrivacy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3116A7B81ECDE1F00001B794 /* MainStoryboard_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		31307E7A179450B50029F7D8 /* LogIn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogIn.h; sourceTree = "<group>"; };
 		31307E7B179450B50029F7D8 /* LogIn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = LogIn.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		315D81781EDFB62A0073716F /* MainStoryboard_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		315D817A1EDFB6470073716F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		31622FD317AAA65200E3E425 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		317193F41EC6DA9F00D4C494 /* OPA.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OPA.entitlements; sourceTree = "<group>"; };
+		317771761EE0A2DF006DC7F0 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = ../../../../../usr/lib/libsqlite3.dylib; sourceTree = "<group>"; };
+		317771781EE0A2F5006DC7F0 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
 		31D0B4ED1E8C566D00DF0E2F /* Parking.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Parking.entitlements; sourceTree = "<group>"; };
+		344F85522FA1785E6C9D294B /* Pods-OPA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OPA.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OPA/Pods-OPA.debug.xcconfig"; sourceTree = "<group>"; };
 		4905FAAC1A1E8DB6009A9B9A /* DetailPaymentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailPaymentCell.h; sourceTree = "<group>"; };
 		4905FAAD1A1E8DB6009A9B9A /* DetailPaymentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailPaymentCell.m; sourceTree = "<group>"; };
 		4905FAAF1A1E8DD2009A9B9A /* AddPaymentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddPaymentCell.h; sourceTree = "<group>"; };
@@ -160,7 +163,6 @@
 		496590B11785193E00287B3C /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MainViewController.m; sourceTree = "<group>"; wrapsLines = 1; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		4966523F19415D000036A7E6 /* PaymentDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentDetails.h; sourceTree = "<group>"; };
 		4966524019415D000036A7E6 /* PaymentDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentDetails.m; sourceTree = "<group>"; };
-		497064B91A7017640030234B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		49778DBF193C099E0045006B /* Filter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Filter.h; sourceTree = "<group>"; };
 		49778DC0193C099E0045006B /* Filter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Filter.m; sourceTree = "<group>"; };
 		497BC23F182EE45900A29D8E /* Privacy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Privacy.h; sourceTree = "<group>"; };
@@ -203,7 +205,6 @@
 		49BC88E51938F6CA002F461E /* Menu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Menu.m; sourceTree = "<group>"; };
 		49C0CC5F1A3653890062D8D2 /* BraintreeUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BraintreeUser.h; sourceTree = "<group>"; };
 		49C0CC601A3653890062D8D2 /* BraintreeUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BraintreeUser.m; sourceTree = "<group>"; };
-		49C2340418C90823005B1487 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		49C2340618C9083D005B1487 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		49C3FFE918158CAB00EF5C7A /* ChangePassword.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePassword.h; sourceTree = "<group>"; };
 		49C3FFEA18158CAB00EF5C7A /* ChangePassword.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePassword.m; sourceTree = "<group>"; };
@@ -217,7 +218,6 @@
 		49E17AE61938D46900DBE945 /* RequesterInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequesterInfo.m; sourceTree = "<group>"; };
 		49E1C93F17985D9B000FBFEC /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		49E86C5217C3D4F800BA9C2F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		49EB4E1A1843E8330070A25F /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		49EC0FAE193CCFBB00104F78 /* Post.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Post.h; sourceTree = "<group>"; };
 		49EC0FAF193CCFBB00104F78 /* Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
 		49EC0FD2193CDF2D00104F78 /* Payments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Payments.h; sourceTree = "<group>"; };
@@ -230,11 +230,10 @@
 		49F8BF41191C1AC500E96A70 /* todos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = todos.m; sourceTree = "<group>"; };
 		49FC13FA1A7C0816005D9375 /* DetailPaymentExpiredCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailPaymentExpiredCell.h; sourceTree = "<group>"; };
 		49FC13FB1A7C0816005D9375 /* DetailPaymentExpiredCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailPaymentExpiredCell.m; sourceTree = "<group>"; };
-		75B399C7DA38EAFFBE653428 /* Pods-Parking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parking.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Parking/Pods-Parking.debug.xcconfig"; sourceTree = "<group>"; };
 		8A3EFFE6E3055605AE1B4D2E /* libPods-Parking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Parking.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BB58F041A2D5ACC009724FC /* TermsPrivacy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TermsPrivacy.h; sourceTree = "<group>"; };
 		8BB58F051A2D5ACC009724FC /* TermsPrivacy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TermsPrivacy.m; sourceTree = "<group>"; };
-		8EF1D0515B4BC82C1678D07A /* Pods-Parking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parking.release.xcconfig"; path = "Pods/Target Support Files/Pods-Parking/Pods-Parking.release.xcconfig"; sourceTree = "<group>"; };
+		FFAC047F34AD57C292545A3E /* Pods-OPA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OPA.release.xcconfig"; path = "Pods/Target Support Files/Pods-OPA/Pods-OPA.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,6 +241,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				317771791EE0A2F5006DC7F0 /* libz.1.dylib in Frameworks */,
+				317771771EE0A2DF006DC7F0 /* libsqlite3.dylib in Frameworks */,
 				498323FA193E313F00BA4181 /* Security.framework in Frameworks */,
 				498323F8193E313200BA4181 /* OpenGLES.framework in Frameworks */,
 				498323F6193E312700BA4181 /* MobileCoreServices.framework in Frameworks */,
@@ -251,10 +252,8 @@
 				498323F0193E2B9400BA4181 /* AVFoundation.framework in Frameworks */,
 				49A58E051911599C008EE6A8 /* MessageUI.framework in Frameworks */,
 				49C2340718C9083D005B1487 /* AdSupport.framework in Frameworks */,
-				49C2340518C90823005B1487 /* libsqlite3.dylib in Frameworks */,
 				498D4EB619F976D200592DE0 /* CoreGraphics.framework in Frameworks */,
 				49B944FC18A431B100FBD8C4 /* CoreImage.framework in Frameworks */,
-				49EB4E221843EA800070A25F /* libz.dylib in Frameworks */,
 				498D4EB719F976D600592DE0 /* Foundation.framework in Frameworks */,
 				490A55A217DF79AA00848A4A /* QuartzCore.framework in Frameworks */,
 				49E86C5317C3D4F800BA9C2F /* AudioToolbox.framework in Frameworks */,
@@ -262,7 +261,6 @@
 				49E1C94017985D9B000FBFEC /* AddressBook.framework in Frameworks */,
 				491A942617908FD400DB811F /* CoreLocation.framework in Frameworks */,
 				496590961785193E00287B3C /* UIKit.framework in Frameworks */,
-				6FCDB898DC1AAAA8AF78039E /* libPods-Parking.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,8 +289,8 @@
 		335CA6832CCDC65D73E84800 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				75B399C7DA38EAFFBE653428 /* Pods-Parking.debug.xcconfig */,
-				8EF1D0515B4BC82C1678D07A /* Pods-Parking.release.xcconfig */,
+				344F85522FA1785E6C9D294B /* Pods-OPA.debug.xcconfig */,
+				FFAC047F34AD57C292545A3E /* Pods-OPA.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -414,7 +412,7 @@
 			children = (
 				317193F41EC6DA9F00D4C494 /* OPA.entitlements */,
 				31D0B4ED1E8C566D00DF0E2F /* Parking.entitlements */,
-				4965909B1785193E00287B3C /* Organic Parking */,
+				4965909B1785193E00287B3C /* OPA */,
 				496590941785193E00287B3C /* Frameworks */,
 				496590931785193E00287B3C /* Products */,
 				335CA6832CCDC65D73E84800 /* Pods */,
@@ -432,6 +430,8 @@
 		496590941785193E00287B3C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				317771781EE0A2F5006DC7F0 /* libz.1.dylib */,
+				317771761EE0A2DF006DC7F0 /* libsqlite3.dylib */,
 				492F903819F96E53002BB9F3 /* CoreFoundation.framework */,
 				498323F9193E313F00BA4181 /* Security.framework */,
 				498323F7193E313200BA4181 /* OpenGLES.framework */,
@@ -441,9 +441,7 @@
 				498323EF193E2B9400BA4181 /* AVFoundation.framework */,
 				49A58E041911599C008EE6A8 /* MessageUI.framework */,
 				49C2340618C9083D005B1487 /* AdSupport.framework */,
-				49C2340418C90823005B1487 /* libsqlite3.dylib */,
 				49B944FB18A431B100FBD8C4 /* CoreImage.framework */,
-				49EB4E1A1843E8330070A25F /* libz.dylib */,
 				490A55A117DF79AA00848A4A /* QuartzCore.framework */,
 				49E86C5217C3D4F800BA9C2F /* AudioToolbox.framework */,
 				31622FD317AAA65200E3E425 /* SystemConfiguration.framework */,
@@ -457,12 +455,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4965909B1785193E00287B3C /* Organic Parking */ = {
+		4965909B1785193E00287B3C /* OPA */ = {
 			isa = PBXGroup;
 			children = (
-				497064B91A7017640030234B /* Images.xcassets */,
+				315D817A1EDFB6470073716F /* Images.xcassets */,
 				496590AD1785193E00287B3C /* MainStoryboard.storyboard */,
-				3116A7B81ECDE1F00001B794 /* MainStoryboard_iPad.storyboard */,
+				315D81781EDFB62A0073716F /* MainStoryboard_iPad.storyboard */,
 				49A775D117EA5A84000E0615 /* Delegate */,
 				31307E79179450A20029F7D8 /* Log In */,
 				497F4464181048A600243085 /* Register */,
@@ -488,7 +486,7 @@
 				31307E78179450810029F7D8 /* External Libraries */,
 				4965909C1785193E00287B3C /* Supporting Files */,
 			);
-			name = "Organic Parking";
+			name = OPA;
 			path = Organic_Parking;
 			sourceTree = "<group>";
 		};
@@ -815,10 +813,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				496590A01785193E00287B3C /* InfoPlist.strings in Resources */,
+				315D817B1EDFB6470073716F /* Images.xcassets in Resources */,
 				49A58E0719116D22008EE6A8 /* faqs.plist in Resources */,
 				496590AF1785193E00287B3C /* MainStoryboard.storyboard in Resources */,
-				497064BA1A7017640030234B /* Images.xcassets in Resources */,
-				3116A7B91ECDE1F00001B794 /* MainStoryboard_iPad.storyboard in Resources */,
+				315D81791EDFB62A0073716F /* MainStoryboard_iPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -837,7 +835,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Parking/Pods-Parking-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OPA/Pods-OPA-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		3FD3DA69B650D5D83E2D6D4D /* [CP] Check Pods Manifest.lock */ = {
@@ -852,7 +850,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		75623B96065365B1C8EE1876 /* [CP] Copy Pods Resources */ = {
@@ -867,7 +865,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Parking/Pods-Parking-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OPA/Pods-OPA-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1041,7 +1039,7 @@
 		};
 		496590B61785193E00287B3C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 75B399C7DA38EAFFBE653428 /* Pods-Parking.debug.xcconfig */;
+			baseConfigurationReference = 344F85522FA1785E6C9D294B /* Pods-OPA.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1070,7 +1068,7 @@
 					"$(inherited)",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.organicparking.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.imkostas.opa;
 				PRODUCT_NAME = OPA;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -1083,7 +1081,7 @@
 		};
 		496590B71785193E00287B3C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8EF1D0515B4BC82C1678D07A /* Pods-Parking.release.xcconfig */;
+			baseConfigurationReference = FFAC047F34AD57C292545A3E /* Pods-OPA.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1111,7 +1109,7 @@
 					"$(inherited)",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.organicparking.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.imkostas.opa;
 				PRODUCT_NAME = OPA;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";

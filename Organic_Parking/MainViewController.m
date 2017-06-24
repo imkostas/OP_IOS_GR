@@ -710,7 +710,7 @@
 
 - (void)sendPayment {
     
-    self.customAlert = [[CustomAlert alloc] initWithType:2 withframe:self.view.frame withMessage:[NSString stringWithFormat:@"You need to find your seller and pay cash. Do you confirm that you paid?"]];
+    self.customAlert = [[CustomAlert alloc] initWithType:2 withframe:self.view.frame withMessage:[NSString stringWithFormat:@"Πρέπει να βρεις τον πωλητή και να τον πληρώσεις. Τον πλήρωσες;"]];
     [self.customAlert.leftButton setBackgroundColor:OP_LIGHT_GRAY_COLOR];
     [self.customAlert.leftButton setTitle:@"No" forState:UIControlStateNormal];
     [self.customAlert.rightButton setBackgroundColor: OP_BLUE_COLOR];
@@ -771,7 +771,7 @@
                   
               } else {
                   
-                  [self customAlert:@"Unable to send payment" withDone:@"OK" withColor:NO withTag:0];
+                  [self customAlert:@"Δεν μπορέσαμε να στείλουμε την πληρωμή" withDone:@"OK" withColor:NO withTag:0];
                   
               }
               
@@ -809,10 +809,10 @@
     } else if(self.user.hasRequest) {
         
         if(self.annotation.post_id != self.user.request.post_id){
-            [self customAlert:@"Currently, you're only allowed to request one spot at a time" withDone:@"OK" withColor:NO withTag:0];
+            [self customAlert:@"Μπορείς να ζητήσεις μόνο μιά θέση κάθε φορά" withDone:@"OK" withColor:NO withTag:0];
         } else {
             [self.requestPostButton setTitle:@"CANCEL REQUEST" forState:UIControlStateNormal];
-            [self customAlert:@"You've already requested this spot" withDone:@"OK" withColor:NO withTag:0];
+            [self customAlert:@"Ήδη ζήτησες αυτή τη θέση" withDone:@"OK" withColor:NO withTag:0];
         }
         canRequest = false;
         
@@ -898,7 +898,7 @@
                       
                   } else {
                       
-                      [self customAlert:@"We were unable to request this spot for you" withDone:@"OK" withColor:NO withTag:0];
+                      [self customAlert:@"Δεν μπορέσαμε να ζητήσουμε την θέση που θέλεις" withDone:@"OK" withColor:NO withTag:0];
                       
                   }
                   
@@ -918,7 +918,7 @@
 //if request is pending - if user wants to cancel, this method runs
 - (void)confirmCancelRequest {
     
-    self.customAlert = [[CustomAlert alloc] initWithType:2 withframe:self.view.frame withMessage:@"Are you sure you want to cancel your request?"];
+    self.customAlert = [[CustomAlert alloc] initWithType:2 withframe:self.view.frame withMessage:@"Σίγουρα θέλεις να ακυρώσεις την αίτηση σου;"];
     [self.customAlert.leftButton setBackgroundColor:[UIColor colorWithRed:200/255.0f green:200/255.0f blue:200/255.0f alpha:1.0]];
     [self.customAlert.leftButton setTitle:@"No" forState:UIControlStateNormal];
     [self.customAlert.rightButton setBackgroundColor:[UIColor colorWithRed:40/255.0f green:212/255.0f blue:202/255.0f alpha:1.0]];
@@ -979,7 +979,7 @@
                   
               } else {
                   
-                  [self customAlert:@"We were unable to cancel this request for you" withDone:@"OK" withColor:NO withTag:0];
+                  [self customAlert:@"Δεν μπορέσαμε να ακυρώσουμε την αίτηση σου" withDone:@"OK" withColor:NO withTag:0];
                   
               }
               
@@ -1024,7 +1024,7 @@
 //if poster wants to delete their current post, display a confirm popup
 - (void)removePost {
     
-    self.customAlert = [[CustomAlert alloc] initWithType:2 withframe:self.view.frame withMessage:@"Are you sure you want to remove your post?"];
+    self.customAlert = [[CustomAlert alloc] initWithType:2 withframe:self.view.frame withMessage:@"Σίγουρα θέλεις να σβήσεις την θέση σου;"];
     [self.customAlert.leftButton setBackgroundColor:[UIColor colorWithRed:200/255.0f green:200/255.0f blue:200/255.0f alpha:1.0]];
     [self.customAlert.leftButton setTitle:@"No" forState:UIControlStateNormal];
     [self.customAlert.rightButton setBackgroundColor:[UIColor colorWithRed:255/255.0f green:70/255.0f blue:98/255.0f alpha:1.0]];
@@ -1084,7 +1084,7 @@
                   
               } else {
                   
-                  [self customAlert:@"We were unable to delete your post" withDone:@"OK" withColor:YES withTag:0];
+                  [self customAlert:@"Δεν μπορέσαμε να σβήσουμε την θέση σου" withDone:@"OK" withColor:YES withTag:0];
                   
               }
               
@@ -1095,7 +1095,7 @@
 //if user is in requested deal and wants to cancel
 - (void)cancelDeal:(int)status {
     
-    self.customAlert = [[CustomAlert alloc] initWithType:2 withframe:self.view.frame withMessage:@"Are you sure you want to cancel?"];
+    self.customAlert = [[CustomAlert alloc] initWithType:2 withframe:self.view.frame withMessage:@"Σίγουρα θέλεις να ακυρώσεις;"];
     [self.customAlert.leftButton setBackgroundColor:[UIColor colorWithRed:200/255.0f green:200/255.0f blue:200/255.0f alpha:1.0]];
     [self.customAlert.leftButton setTitle:@"No" forState:UIControlStateNormal];
     [self.customAlert.rightButton setBackgroundColor: (currentView == 2) ? [UIColor colorWithRed:255/255.0f green:70/255.0f blue:98/255.0f alpha:1.0] : [UIColor colorWithRed:40/255.0f green:212/255.0f blue:202/255.0f alpha:1.0]];
@@ -1160,7 +1160,7 @@
                   
               } else {
                   
-                  [self customAlert:@"Unable to cancel deal" withDone:@"OK"
+                  [self customAlert:@"Δεν μπορέσαμε να ακυρώσουμε την συμφωνία" withDone:@"OK"
                           withColor:((currentView == 1) ? NO : YES) withTag:0];
                   
               }
@@ -2536,7 +2536,7 @@
     if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"8.0")){
         
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Enable Location Services"
-                                                        message:@"To use OPA, location services must be enabled within Settings"
+                                                        message:@"Για να δουλέψει το ΟΠΑ πρέπει ανάψεις τις γεωγραφικές υπηρεσίες στις Ρυθμίσεις"
                                                        delegate:self
                                               cancelButtonTitle:@"Settings"
                                               otherButtonTitles:@"OK", nil];
@@ -2852,7 +2852,7 @@
             
         } else if(self.user.hasPost){
             
-            [self customAlert:@"Currently, you're only allowed to post one spot at a time" withDone:@"OK" withColor:NO withTag:0];
+            [self customAlert:@"Μπορείς να τοποθετήσεις μόνο μία θέση κάθε φορά" withDone:@"ΕΝΤΑΞΕΙ" withColor:NO withTag:0];
             
             //        } else if(!self.user.vehicle.hasVehicle) {
             //
@@ -3147,14 +3147,14 @@
 - (void)noAccount {
     
     //setup alert and ask user to confirm log out action
-    self.customAlert = [[CustomAlert alloc] initWithType:2 withframe:self.view.frame withMessage:@"You need to login or create an account"];
+    self.customAlert = [[CustomAlert alloc] initWithType:2 withframe:self.view.frame withMessage:@"Πρέπει να συνδεθείς η να φτιάξεις νέο λογαριασμό"];
     
     [self.customAlert.leftButton setBackgroundColor:[UIColor colorWithRed:200/255.0f green:200/255.0f blue:200/255.0f alpha:1.0]];
-    [self.customAlert.leftButton setTitle:@"Later" forState:UIControlStateNormal];
+    [self.customAlert.leftButton setTitle:@"Μετά" forState:UIControlStateNormal];
     [self.customAlert.leftButton setTag:0];
     
     [self.customAlert.rightButton setBackgroundColor:[UIColor colorWithRed:40/255.0f green:212/255.0f blue:202/255.0f alpha:1.0]];
-    [self.customAlert.rightButton setTitle:@"Now" forState:UIControlStateNormal];
+    [self.customAlert.rightButton setTitle:@"Τώρα" forState:UIControlStateNormal];
     [self.customAlert.rightButton setTag:5];
     
     self.customAlert.customAlertDelegate = self;
