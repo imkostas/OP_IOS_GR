@@ -161,13 +161,13 @@
 - (void)noAccount {
     
     //setup alert and ask user to confirm log out action
-    self.customAlert = [[CustomAlert alloc] initWithType:2 withframe:self.parentViewController.view.frame withMessage:@"You need to login or create an account"];
+    self.customAlert = [[CustomAlert alloc] initWithType:2 withframe:self.parentViewController.view.frame withMessage:@"Πρέπει να συνδεθείς η να φτιάξεις νέο λογαριασμό"];
     
     [self.customAlert.leftButton setBackgroundColor:[UIColor colorWithRed:200/255.0f green:200/255.0f blue:200/255.0f alpha:1.0]];
-    [self.customAlert.leftButton setTitle:@"Later" forState:UIControlStateNormal];
+    [self.customAlert.leftButton setTitle:@"Αργότερα" forState:UIControlStateNormal];
     
     [self.customAlert.rightButton setBackgroundColor:[UIColor colorWithRed:40/255.0f green:212/255.0f blue:202/255.0f alpha:1.0]];
-    [self.customAlert.rightButton setTitle:@"Now" forState:UIControlStateNormal];
+    [self.customAlert.rightButton setTitle:@"Τώρα" forState:UIControlStateNormal];
     [self.customAlert.rightButton setTag:1];
     
     self.customAlert.customAlertDelegate = self;
@@ -180,13 +180,13 @@
 - (IBAction)logout:(id)sender {
     
     //setup alert and ask user to confirm log out action
-    self.customAlert = [[CustomAlert alloc] initWithType:2 withframe:self.parentViewController.view.frame withMessage:@"Are you sure you want to log out?"];
+    self.customAlert = [[CustomAlert alloc] initWithType:2 withframe:self.parentViewController.view.frame withMessage:@"Σίγουρα θές να αποσυνδεθείς;"];
     
     [self.customAlert.leftButton setBackgroundColor:[UIColor colorWithRed:200/255.0f green:200/255.0f blue:200/255.0f alpha:1.0]];
-    [self.customAlert.leftButton setTitle:@"No" forState:UIControlStateNormal];
+    [self.customAlert.leftButton setTitle:@"ΟΧΙ" forState:UIControlStateNormal];
     
     [self.customAlert.rightButton setBackgroundColor:[UIColor colorWithRed:40/255.0f green:212/255.0f blue:202/255.0f alpha:1.0]];
-    [self.customAlert.rightButton setTitle:@"Yes" forState:UIControlStateNormal];
+    [self.customAlert.rightButton setTitle:@"ΝΑΙ" forState:UIControlStateNormal];
     [self.customAlert.rightButton setTag:0];
     
     self.customAlert.customAlertDelegate = self;
@@ -302,7 +302,7 @@
         
     } else {
         
-        self.customAlert = [[CustomAlert alloc] initWithType:1 withframe:self.parentViewController.view.frame withMessage:@"Unfortunately your device doesn't support email. You can always contact us through your personal email client at support@organicparking.com"];
+        self.customAlert = [[CustomAlert alloc] initWithType:1 withframe:self.parentViewController.view.frame withMessage:@"Δυστυχώς η συσκευή σου δεν υποστηρίζει ηλεκτρονική διεύθυνση. Μπορείς αν επικοινωνήσεις μαζί μας στο support@opaopaopa.com"];
         [self.customAlert.leftButton setTitle:@"OK" forState:UIControlStateNormal];
         self.customAlert.customAlertDelegate = self;
         [self.parentViewController.view addSubview:self.customAlert];

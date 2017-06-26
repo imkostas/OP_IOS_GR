@@ -48,8 +48,8 @@
     
     if(self.user.code == RATE_NOW){
         
-        [self.backBtn setTitle:@"Cancel" forState:UIControlStateNormal];
-        [self.backBtn setTitle:@"Cancel" forState:UIControlStateHighlighted];
+        [self.backBtn setTitle:@"Άκυρο" forState:UIControlStateNormal];
+        [self.backBtn setTitle:@"Άκυρο" forState:UIControlStateHighlighted];
         
     } else if (self.user.code == RATE_LATER){
         
@@ -93,12 +93,12 @@
     
     if(self.user.code == RATE_NOW || self.user.code == RATE_LATER){
         
-        self.customAlert = [[CustomAlert alloc] initWithType:2 withframe:self.view.bounds withMessage:[NSString stringWithFormat:@"%@ has canceled their deal with you. Would you like to leave feedback?", self.user.feebackInfo.ratee]];
+        self.customAlert = [[CustomAlert alloc] initWithType:2 withframe:self.view.bounds withMessage:[NSString stringWithFormat:@"%@ εχει ακυρώσει την συμφωνία μαζί σου. Θέλεις να κάνεις κριτική;", self.user.feebackInfo.ratee]];
         [self.customAlert setTag:2];
         [self.customAlert.leftButton setBackgroundColor:OP_LIGHT_GRAY_COLOR];
-        [self.customAlert.leftButton setTitle:@"No" forState:UIControlStateNormal];
+        [self.customAlert.leftButton setTitle:@"ΟΧΙ" forState:UIControlStateNormal];
         [self.customAlert.rightButton setBackgroundColor:OP_BLUE_COLOR];
-        [self.customAlert.rightButton setTitle:@"Yes" forState:UIControlStateNormal];
+        [self.customAlert.rightButton setTitle:@"ΝΑΙ" forState:UIControlStateNormal];
         
         self.customAlert.customAlertDelegate = self;
         
@@ -215,7 +215,7 @@
         
     } else {
         
-        NSLog(@"Failed to get rater image");
+        NSLog(@"Δεν μπορέσαμε να κατεβάσουμε τη φωτογραφία του αξιολογητή");
         //might want to set image to placeholder
         
     }
@@ -282,7 +282,7 @@
                   
               } else {
                   
-                  [self customAlert:@"Unable to leave feedback" withDone:@"OK" withTag:0];
+                  [self customAlert:@"Δεν μπορέσαμε να αφήσουμε την κριτική σου" withDone:@"OK" withTag:0];
                   
               }
               
@@ -339,12 +339,12 @@
     //check again that rating submission is valid
     if(self.rating == 0){
         
-        [self customAlert:@"You still need to set a star rating" withDone:@"OK" withTag:0];
+        [self customAlert:@"Πρέπει να διαλέξεις πόσα αστεράκια θέλεις να δώσεις" withDone:@"OK" withTag:0];
         return false;
         
     } else if(self.recommended == -1){
         
-        [self customAlert:[NSString stringWithFormat:@"You still need indicate whether or not you recommend %@", self.user.feebackInfo.ratee] withDone:@"OK" withTag:0];
+        [self customAlert:[NSString stringWithFormat:@"Πρέπει να πεις αν συστήνεις η όχι τον/την %@", self.user.feebackInfo.ratee] withDone:@"OK" withTag:0];
         return false;
         
     } else {
@@ -404,7 +404,7 @@
                       
                   } else {
                       
-                      [self customAlert:@"Unable to leave feedback" withDone:@"OK" withTag:0];
+                      [self customAlert:@"Δεν μπορέσαμε να αφήσουμε την κριτική σου" withDone:@"OK" withTag:0];
                       
                   }
                   

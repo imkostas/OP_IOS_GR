@@ -148,14 +148,14 @@
 		495DA0A21A4103740054C72B /* DateFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateFilter.m; sourceTree = "<group>"; };
 		496068F9193AE8ED001BC25C /* SearchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchCell.h; sourceTree = "<group>"; };
 		496068FA193AE8ED001BC25C /* SearchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchCell.m; sourceTree = "<group>"; };
-		496590921785193E00287B3C /* OPA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OPA.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		496590921785193E00287B3C /* ΟΠΑ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ΟΠΑ.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		496590951785193E00287B3C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		496590971785193E00287B3C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		496590991785193E00287B3C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		4965909D1785193E00287B3C /* OPA-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OPA-Info.plist"; sourceTree = "<group>"; };
+		4965909D1785193E00287B3C /* ΟΠΑ-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ΟΠΑ-Info.plist"; sourceTree = "<group>"; };
 		4965909F1785193E00287B3C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		496590A11785193E00287B3C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		496590A31785193E00287B3C /* OPA-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OPA-Prefix.pch"; sourceTree = "<group>"; };
+		496590A31785193E00287B3C /* ΟΠΑ-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ΟΠΑ-Prefix.pch"; sourceTree = "<group>"; };
 		496590A41785193E00287B3C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		496590A51785193E00287B3C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		496590AE1785193E00287B3C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
@@ -241,6 +241,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49E86C5317C3D4F800BA9C2F /* AudioToolbox.framework in Frameworks */,
 				317771791EE0A2F5006DC7F0 /* libz.1.dylib in Frameworks */,
 				317771771EE0A2DF006DC7F0 /* libsqlite3.dylib in Frameworks */,
 				498323FA193E313F00BA4181 /* Security.framework in Frameworks */,
@@ -256,7 +257,6 @@
 				49B944FC18A431B100FBD8C4 /* CoreImage.framework in Frameworks */,
 				498D4EB719F976D600592DE0 /* Foundation.framework in Frameworks */,
 				490A55A217DF79AA00848A4A /* QuartzCore.framework in Frameworks */,
-				49E86C5317C3D4F800BA9C2F /* AudioToolbox.framework in Frameworks */,
 				31622FD417AAA65200E3E425 /* SystemConfiguration.framework in Frameworks */,
 				49E1C94017985D9B000FBFEC /* AddressBook.framework in Frameworks */,
 				491A942617908FD400DB811F /* CoreLocation.framework in Frameworks */,
@@ -422,7 +422,7 @@
 		496590931785193E00287B3C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				496590921785193E00287B3C /* OPA.app */,
+				496590921785193E00287B3C /* ΟΠΑ.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -495,10 +495,10 @@
 			children = (
 				4922772119F5610200A7AADC /* Definitions.h */,
 				49A58E0619116D22008EE6A8 /* faqs.plist */,
-				4965909D1785193E00287B3C /* OPA-Info.plist */,
+				4965909D1785193E00287B3C /* ΟΠΑ-Info.plist */,
 				4965909E1785193E00287B3C /* InfoPlist.strings */,
 				496590A11785193E00287B3C /* main.m */,
-				496590A31785193E00287B3C /* OPA-Prefix.pch */,
+				496590A31785193E00287B3C /* ΟΠΑ-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -741,9 +741,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		496590911785193E00287B3C /* OPA */ = {
+		496590911785193E00287B3C /* ΟΠΑ */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 496590B51785193E00287B3C /* Build configuration list for PBXNativeTarget "OPA" */;
+			buildConfigurationList = 496590B51785193E00287B3C /* Build configuration list for PBXNativeTarget "ΟΠΑ" */;
 			buildPhases = (
 				3FD3DA69B650D5D83E2D6D4D /* [CP] Check Pods Manifest.lock */,
 				4965908E1785193E00287B3C /* Sources */,
@@ -756,9 +756,9 @@
 			);
 			dependencies = (
 			);
-			name = OPA;
+			name = "ΟΠΑ";
 			productName = OPPannig;
-			productReference = 496590921785193E00287B3C /* OPA.app */;
+			productReference = 496590921785193E00287B3C /* ΟΠΑ.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -790,7 +790,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4965908D1785193E00287B3C /* Build configuration list for PBXProject "OPA" */;
+			buildConfigurationList = 4965908D1785193E00287B3C /* Build configuration list for PBXProject "ΟΠΑ" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -802,7 +802,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				496590911785193E00287B3C /* OPA */,
+				496590911785193E00287B3C /* ΟΠΑ */,
 			);
 		};
 /* End PBXProject section */
@@ -1056,20 +1056,16 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Organic_Parking/OPA-Prefix.pch";
-				INFOPLIST_FILE = "Organic_Parking/OPA-Info.plist";
+				GCC_PREFIX_HEADER = "Organic_Parking/ΟΠΑ-Prefix.pch";
+				INFOPLIST_FILE = "Organic_Parking/ΟΠΑ-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/Organic_Parking",
-					"$(inherited)",
-				);
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.imkostas.opa;
-				PRODUCT_NAME = OPA;
+				PRODUCT_NAME = "ΟΠΑ";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
@@ -1097,20 +1093,16 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Organic_Parking/OPA-Prefix.pch";
-				INFOPLIST_FILE = "Organic_Parking/OPA-Info.plist";
+				GCC_PREFIX_HEADER = "Organic_Parking/ΟΠΑ-Prefix.pch";
+				INFOPLIST_FILE = "Organic_Parking/ΟΠΑ-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/Organic_Parking",
-					"$(inherited)",
-				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.imkostas.opa;
-				PRODUCT_NAME = OPA;
+				PRODUCT_NAME = "ΟΠΑ";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
@@ -1122,7 +1114,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4965908D1785193E00287B3C /* Build configuration list for PBXProject "OPA" */ = {
+		4965908D1785193E00287B3C /* Build configuration list for PBXProject "ΟΠΑ" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				496590B31785193E00287B3C /* Debug */,
@@ -1131,7 +1123,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		496590B51785193E00287B3C /* Build configuration list for PBXNativeTarget "OPA" */ = {
+		496590B51785193E00287B3C /* Build configuration list for PBXNativeTarget "ΟΠΑ" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				496590B61785193E00287B3C /* Debug */,

@@ -163,7 +163,7 @@
         //if page equal to 3, change skipBtn title to Get Started - otherwise, change it to Skip
         switch (self.pageController.currentPage) {
             case 3:
-                [self.skipBtn setTitle:@"Get started" forState:UIControlStateNormal];
+                [self.skipBtn setTitle:@"ΑΡΧΙΣΕ" forState:UIControlStateNormal];
                 [self.skipBtn setHidden:NO];
                 break;
                 

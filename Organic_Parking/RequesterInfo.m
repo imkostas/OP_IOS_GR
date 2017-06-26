@@ -229,7 +229,7 @@
                   
                   if([[[operation.responseObject valueForKey:@"alert"] valueForKey:@"message"] isEqualToString:@""]){
                       
-                      [self customAlert:@"This request has just been canceled"
+                      [self customAlert:@"Αυτή η αίτηση μόλις ακυρώθηκε"
                                withDone:@"OK"
                                 withTag:1];
                       
@@ -243,7 +243,7 @@
                   
               } else {
                   
-                  [self customAlert:@"Unable to send the requester your response" withDone:@"OK" withTag:0];
+                  [self customAlert:@"Δεν μπορέσαμε να στείλουμε την αίτηση σου" withDone:@"OK" withTag:0];
                   
               }
               

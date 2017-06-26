@@ -474,7 +474,7 @@
 - (void)getPickerSource {
     
     //create actionsheet prompting user how they want to add their profile photo
-    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"Πάρε φωτό", @"Διάλεξε από το άλμπουμ", nil];
+    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"Άκυρο" destructiveButtonTitle:nil otherButtonTitles:@"Πάρε φωτό", @"Διάλεξε από το άλμπουμ", nil];
     actionSheet.actionSheetStyle = UIActionSheetStyleDefault;
     
     // The action sheet needs to be presented differently between iPad and iPhone
@@ -592,7 +592,7 @@
     
 //    //present image picker based on source type
 //    [self presentViewController:self.imagePicker animated:YES completion:nil];
-    
+//
 }
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingImage:(UIImage *)image editingInfo:(NSDictionary *)editingInfo {

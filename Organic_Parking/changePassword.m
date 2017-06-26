@@ -212,22 +212,22 @@
     //check that current password not empty, both new passwords not empty, and that new passwords match
     if([[self.currentPassword.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet] ] length]==0) {
         
-        [self customAlert:@"Please enter your current password before continuing" withDone:@"OK"];
+        [self customAlert:@"Παρακαλώ βάλε το παλιό συνθηματικό πριν προχωρήσεις" withDone:@"OK"];
         return false;
         
     } else if ([[self.profilePasswordNew.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet] ] length]==0) {
         
-        [self customAlert:@"Please enter your new password before continuing" withDone:@"OK"];
+        [self customAlert:@"Παρακαλώ βάλε το νέο συνθηματικό πριν προχωρήσεις" withDone:@"OK"];
         return false;
         
     } else if ([[self.confirmProfilePassword.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet] ] length]==0) {
         
-        [self customAlert:@"Please confirm your new password before continuing" withDone:@"OK"];
+        [self customAlert:@"Παρακαλώ επιβεβαίωσε το νέο συνθηματικό πριν προχωρήσεις" withDone:@"OK"];
         return false;
         
     } else if(![self.profilePasswordNew.text isEqualToString:self.confirmProfilePassword.text]){
         
-        [self customAlert:@"New Password fields don't match" withDone:@"OK"];
+        [self customAlert:@"Τα δύο νέα συνθηματικά δεν ταιριάζουν" withDone:@"OK"];
         return false;
         
     }

@@ -139,7 +139,7 @@
                  
              } else {
                  
-                 [self customAlert:@"Chat is currently unavailable" withDone:@"OK"];
+                 [self customAlert:@"Οι συζητήσεις δεν λειτουργούν προσωρινά" withDone:@"OK"];
                  
              }
              

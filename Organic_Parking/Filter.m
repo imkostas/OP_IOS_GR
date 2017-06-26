@@ -140,7 +140,7 @@
     self.user.shouldRefreshMapPins = YES;
     
     if(self.user.postDetails <= 0){
-        [self customAlert:@"Your search needs a category" withDone:@"OK"];
+        [self customAlert:@"Πρέπει να διαλέξεις κατηγορία" withDone:@"OK"];
         return;
     }
 

@@ -252,7 +252,7 @@
                     
                     NSLog(@"%@", error);
                     
-                    [self customAlert:@"Search by location is currently unavailable" withDone:@"OK"];
+                    [self customAlert:@"Το ψάξιμο με διεύθυνση δεν λειτουργεί προσωρινά" withDone:@"OK"];
                     
                 } else if (placemark) {
                     
@@ -389,7 +389,7 @@
         
         if (error) {
             
-            SPPresentAlertViewWithErrorAndTitle(error, @"Could not fetch Places");
+            SPPresentAlertViewWithErrorAndTitle(error, @"Δεν μπορούμε να βρούμε διευθύνσεις");
             
         } else {
             

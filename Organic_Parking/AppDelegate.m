@@ -24,7 +24,7 @@
     self.user = [UserInfo user];
     
     //Localytics
-    [Localytics autoIntegrate:@"b23cac18ab2ba517f074fbe-fd5c0d08-1aad-11e5-444c-006918dcf667" launchOptions:launchOptions];
+    [Localytics autoIntegrate:@"f11eae14fd48d9caf4ee3e8-c3c20210-1ab0-11e5-444c-006918dcf667" launchOptions:launchOptions];
     
     if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"8.0")) {
         
@@ -119,7 +119,7 @@
     self.user.device = @"";
     
     //notify user they should enable push notifications
-    [self customAlert:@"We recommend enabling push notifications. You can do this within Settings" withDone:@"OK"];
+    [self customAlert:@"Πήγαινε στις ρυθμίσεις και ενεργοποίησε τις ειδοποιήσεις" withDone:@"OK"];
     
 }
 
@@ -145,6 +145,10 @@
     
     //if application is active, show specific alert/message
     if(application.applicationState == UIApplicationStateActive){
+        
+        NSLog(@"Creating local notification");
+        
+        AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
         
         //push types
         if([[[info objectForKey:@"info"] valueForKeyPath:@"type"] isEqualToString:@"canceledDeal"]){

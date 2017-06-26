@@ -169,7 +169,7 @@
 - (void)noAccount {
     
     //setup alert and ask user to confirm log out action
-    self.customAlert = [[CustomAlert alloc] initWithType:2 withframe:self.parentViewController.view.frame withMessage:@"You need to login or create an account"];
+    self.customAlert = [[CustomAlert alloc] initWithType:2 withframe:self.parentViewController.view.frame withMessage:@"Πρέπει να συνδεθείς η να φτιάξεις νέο λογαριασμό"];
     
     [self.customAlert.leftButton setBackgroundColor:[UIColor colorWithRed:200/255.0f green:200/255.0f blue:200/255.0f alpha:1.0]];
     [self.customAlert.leftButton setTitle:@"Later" forState:UIControlStateNormal];
@@ -196,11 +196,11 @@
     }
     
     //if user wants to cancel post, alert them with this message to confirm they really want to cancel
-    self.customAlert = [[CustomAlert alloc] initWithType:2 withframe:self.parentViewController.view.frame withMessage:@"Cancel this post?"];
+    self.customAlert = [[CustomAlert alloc] initWithType:2 withframe:self.parentViewController.view.frame withMessage:@"Θέλεις να ακυρώσεις;"];
     [self.customAlert.leftButton setBackgroundColor:[UIColor colorWithRed:200/255.0f green:200/255.0f blue:200/255.0f alpha:1.0]];
-    [self.customAlert.leftButton setTitle:@"No" forState:UIControlStateNormal];
+    [self.customAlert.leftButton setTitle:@"ΟΧΙ" forState:UIControlStateNormal];
     [self.customAlert.rightButton setBackgroundColor:[UIColor colorWithRed:255/255.0f green:70/255.0f blue:98/255.0f alpha:1.0]];
-    [self.customAlert.rightButton setTitle:@"Yes" forState:UIControlStateNormal];
+    [self.customAlert.rightButton setTitle:@"ΝΑΙ" forState:UIControlStateNormal];
     [self.customAlert.rightButton setTag:0];
     
     
@@ -524,7 +524,7 @@
 //    }
 
     if(postDetails <= 0){
-         [self customAlert:@"Your post needs a category" withDone:@"OK"];
+         [self customAlert:@"Πρέπει να διαλέξεις μιά κατηγορία" withDone:@"OK"];
         return;
         }
 
@@ -573,7 +573,7 @@
                       
                   } else {
                       
-                      [self customAlert:@"We were unable to post your spot" withDone:@"OK"];
+                      [self customAlert:@"Δεν μπορέσαμε να ζητήσουμε την θέση" withDone:@"OK"];
                       
                   }
                   
@@ -586,7 +586,7 @@
         
     } else {
         
-        [self customAlert:@"Your post needs a price" withDone:@"OK"];
+        [self customAlert:@"Η θέση σου χρειάζεται μία ἐγκυρη τιμή" withDone:@"OK"];
         
     }
     

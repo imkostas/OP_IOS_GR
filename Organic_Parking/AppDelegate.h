@@ -6,6 +6,8 @@
 //  Copyright (c) 2017 OPA, Inc. All rights reserved.
 //
 
+#include <AudioToolbox/AudioToolbox.h>
+
 #import "UserInfo.h"
 #import "CustomAlert.h"
 #import "KeyboardControls.h"

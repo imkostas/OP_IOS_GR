@@ -676,19 +676,19 @@
 //considers which stage the deal is in and performs proper method
 - (IBAction)decideToRequestOrCancel:(id)sender {
     
-    if([self.requestPostButton.titleLabel.text isEqualToString:@"REQUEST NOW"]){
+    if([self.requestPostButton.titleLabel.text isEqualToString:@"ΖΗΤΑ ΤΩΡΑ"]){
         
         [self requestSpot];
         
-    } else if ([self.requestPostButton.titleLabel.text isEqualToString:@"CANCEL REQUEST"]) {
+    } else if ([self.requestPostButton.titleLabel.text isEqualToString:@"ΑΚΥΡΩΣΕ ΤΗΝ ΑΙΤΗΣΗ"]) {
         
         [self confirmCancelRequest];
         
-    } else if([self.requestPostButton.titleLabel.text isEqualToString:@"PAY NOW"]){
+    } else if([self.requestPostButton.titleLabel.text isEqualToString:@"ΠΛΗΡΩΣΕ"]){
         
         [self sendPayment];
         
-    } else if([self.requestPostButton.titleLabel.text isEqualToString:@"LEAVE FEEDBACK"]){
+    } else if([self.requestPostButton.titleLabel.text isEqualToString:@"ΚΑΝΕ ΚΡΙΤΙΚΗ"]){
         
         self.user.feebackInfo = [[Feedback alloc] initWithRatee:self.annotation.p_username swapTime:self.annotation.swap_time status:4 postID:self.annotation.post_id];
         [self rateDeal];
@@ -712,9 +712,9 @@
     
     self.customAlert = [[CustomAlert alloc] initWithType:2 withframe:self.view.frame withMessage:[NSString stringWithFormat:@"Πρέπει να βρεις τον πωλητή και να τον πληρώσεις. Τον πλήρωσες;"]];
     [self.customAlert.leftButton setBackgroundColor:OP_LIGHT_GRAY_COLOR];
-    [self.customAlert.leftButton setTitle:@"No" forState:UIControlStateNormal];
+    [self.customAlert.leftButton setTitle:@"OXI" forState:UIControlStateNormal];
     [self.customAlert.rightButton setBackgroundColor: OP_BLUE_COLOR];
-    [self.customAlert.rightButton setTitle:@"Yes" forState:UIControlStateNormal];
+    [self.customAlert.rightButton setTitle:@"NAI" forState:UIControlStateNormal];
     [self.customAlert.rightButton setTag:SEND_PAYMENT_TAG];
     
     self.customAlert.customAlertDelegate = self;
@@ -753,7 +753,7 @@
               
               [self.requestPostButton setFrame:CGRectMake(self.spotInfo.frame.origin.x, self.requestPostButton.frame.origin.y,
                                                           self.spotInfo.frame.size.width, self.requestPostButton.frame.size.height)];
-              [self.requestPostButton setTitle:@"LEAVE FEEDBACK" forState:UIControlStateNormal];
+              [self.requestPostButton setTitle:@"ΚΑΝΕ ΚΡΙΤΙΚΗ" forState:UIControlStateNormal];
               [self refreshMapPins];
               
           } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
@@ -811,7 +811,7 @@
         if(self.annotation.post_id != self.user.request.post_id){
             [self customAlert:@"Μπορείς να ζητήσεις μόνο μιά θέση κάθε φορά" withDone:@"OK" withColor:NO withTag:0];
         } else {
-            [self.requestPostButton setTitle:@"CANCEL REQUEST" forState:UIControlStateNormal];
+            [self.requestPostButton setTitle:@"ΑΚΥΡΩΣΕ ΤΗΝ ΑΙΤΗΣΗ" forState:UIControlStateNormal];
             [self customAlert:@"Ήδη ζήτησες αυτή τη θέση" withDone:@"OK" withColor:NO withTag:0];
         }
         canRequest = false;
@@ -877,7 +877,7 @@
                       
                   }
                   
-                  [self.requestPostButton setTitle:@"CANCEL REQUEST" forState:UIControlStateNormal];
+                  [self.requestPostButton setTitle:@"ΑΚΥΡΩΣΕ ΤΗΝ ΑΙΤΗΣΗ" forState:UIControlStateNormal];
                   [self refreshMapPins];
                   
               } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
@@ -920,9 +920,9 @@
     
     self.customAlert = [[CustomAlert alloc] initWithType:2 withframe:self.view.frame withMessage:@"Σίγουρα θέλεις να ακυρώσεις την αίτηση σου;"];
     [self.customAlert.leftButton setBackgroundColor:[UIColor colorWithRed:200/255.0f green:200/255.0f blue:200/255.0f alpha:1.0]];
-    [self.customAlert.leftButton setTitle:@"No" forState:UIControlStateNormal];
+    [self.customAlert.leftButton setTitle:@"ΟΧΙ" forState:UIControlStateNormal];
     [self.customAlert.rightButton setBackgroundColor:[UIColor colorWithRed:40/255.0f green:212/255.0f blue:202/255.0f alpha:1.0]];
-    [self.customAlert.rightButton setTitle:@"Yes" forState:UIControlStateNormal];
+    [self.customAlert.rightButton setTitle:@"ΝΑΙ" forState:UIControlStateNormal];
     [self.customAlert.rightButton setTag:3];
     
     self.customAlert.customAlertDelegate = self;
@@ -1000,15 +1000,15 @@
 //decides which stage posted spot is in and performs proper method
 - (IBAction)decideToRemoveOrCancel:(id)sender {
     
-    if([self.mySpotBtn.titleLabel.text isEqualToString:@"REMOVE POST"]){
+    if([self.mySpotBtn.titleLabel.text isEqualToString:@"ΑΦΑΙΡΕΣΕ ΤΗΝ ΘΕΣΗ"]){
         
         [self removePost];
         
-    } else if ([self.mySpotBtn.titleLabel.text isEqualToString:@"CANCEL DEAL"]) {
+    } else if ([self.mySpotBtn.titleLabel.text isEqualToString:@"ΑΚΥΡΩΣΕ"]) {
         
         [self cancelDeal:POSTER_CANCELED];
         
-    } else if ([self.mySpotBtn.titleLabel.text isEqualToString:@"LEAVE FEEDBACK"]) {
+    } else if ([self.mySpotBtn.titleLabel.text isEqualToString:@"ΚΑΝΕ ΚΡΙΤΙΚΗ"]) {
         
         self.user.feebackInfo = [[Feedback alloc] initWithRatee:self.annotation.r_username swapTime:self.annotation.swap_time status:3 postID:self.annotation.post_id];
         [self rateDeal];
@@ -1026,9 +1026,9 @@
     
     self.customAlert = [[CustomAlert alloc] initWithType:2 withframe:self.view.frame withMessage:@"Σίγουρα θέλεις να σβήσεις την θέση σου;"];
     [self.customAlert.leftButton setBackgroundColor:[UIColor colorWithRed:200/255.0f green:200/255.0f blue:200/255.0f alpha:1.0]];
-    [self.customAlert.leftButton setTitle:@"No" forState:UIControlStateNormal];
+    [self.customAlert.leftButton setTitle:@"ΟΧΙ" forState:UIControlStateNormal];
     [self.customAlert.rightButton setBackgroundColor:[UIColor colorWithRed:255/255.0f green:70/255.0f blue:98/255.0f alpha:1.0]];
-    [self.customAlert.rightButton setTitle:@"Yes" forState:UIControlStateNormal];
+    [self.customAlert.rightButton setTitle:@"ΝΑΙ" forState:UIControlStateNormal];
     [self.customAlert.rightButton setTag:1];
     
     self.customAlert.customAlertDelegate = self;
@@ -1097,9 +1097,9 @@
     
     self.customAlert = [[CustomAlert alloc] initWithType:2 withframe:self.view.frame withMessage:@"Σίγουρα θέλεις να ακυρώσεις;"];
     [self.customAlert.leftButton setBackgroundColor:[UIColor colorWithRed:200/255.0f green:200/255.0f blue:200/255.0f alpha:1.0]];
-    [self.customAlert.leftButton setTitle:@"No" forState:UIControlStateNormal];
+    [self.customAlert.leftButton setTitle:@"ΟΧΙ" forState:UIControlStateNormal];
     [self.customAlert.rightButton setBackgroundColor: (currentView == 2) ? [UIColor colorWithRed:255/255.0f green:70/255.0f blue:98/255.0f alpha:1.0] : [UIColor colorWithRed:40/255.0f green:212/255.0f blue:202/255.0f alpha:1.0]];
-    [self.customAlert.rightButton setTitle:@"Yes" forState:UIControlStateNormal];
+    [self.customAlert.rightButton setTitle:@"ΝΑΙ" forState:UIControlStateNormal];
     [self.customAlert.rightButton setTag:status];
     
     self.customAlert.customAlertDelegate = self;
@@ -2129,9 +2129,9 @@
     
     if(annotation.status > 0){
         if(!annotation.paid){
-            [self.mySpotBtn setTitle:@"CANCEL DEAL" forState:UIControlStateNormal];
+            [self.mySpotBtn setTitle:@"ΑΚΥΡΩΣΕ" forState:UIControlStateNormal];
         } else {
-            [self.mySpotBtn setTitle:@"LEAVE FEEDBACK" forState:UIControlStateNormal];
+            [self.mySpotBtn setTitle:@"ΚΑΝΕ ΚΡΙΤΙΚΗ" forState:UIControlStateNormal];
         }
         
         [self.mySpotPageControl setEnabled:YES];
@@ -2144,7 +2144,7 @@
         [self.mySpotTimeLimit setFrame:CGRectMake(self.mySpotTimeLimit.frame.origin.x, POST_IN_SWAP,
                                                   self.mySpotTimeLimit.frame.size.width, self.mySpotTimeLimit.frame.size.height)];
     } else {
-        [self.mySpotBtn setTitle:@"REMOVE POST" forState:UIControlStateNormal];
+        [self.mySpotBtn setTitle:@"ΑΦΑΙΡΕΣΕ ΤΗΝ ΘΕΣΗ" forState:UIControlStateNormal];
         [self.mySpotPageControl setEnabled:NO];
         [self.mySpotPageControl setHidden:YES];
         [self.mySpotScroller setUserInteractionEnabled:NO];
@@ -2378,17 +2378,17 @@
         if(!annotation.paid){
             [self.requestCancelButton setFrame:CGRectMake(0, self.requestCancelButton.frame.origin.y, self.spotInfo.frame.size.width/2, self.requestCancelButton.frame.size.height)];
             [self.requestPostButton setFrame:CGRectMake(self.spotInfo.frame.size.width/2, self.requestPostButton.frame.origin.y, self.spotInfo.frame.size.width/2, self.requestPostButton.frame.size.height)];
-            [self.requestPostButton setTitle:@"PAY NOW" forState:UIControlStateNormal];
+            [self.requestPostButton setTitle:@"ΠΛΗΡΩΣΕ" forState:UIControlStateNormal];
         } else {
             [self.requestPostButton setFrame:CGRectMake(self.spotInfo.frame.origin.x, self.requestPostButton.frame.origin.y, self.spotInfo.frame.size.width, self.requestPostButton.frame.size.height)];
-            [self.requestPostButton setTitle:@"LEAVE FEEDBACK" forState:UIControlStateNormal];
+            [self.requestPostButton setTitle:@"ΚΑΝΕ ΚΡΙΤΙΚΗ" forState:UIControlStateNormal];
         }
     } else if([annotation.r_username isEqualToString:self.user.username]){
         [self.requestPostButton setFrame:CGRectMake(self.spotInfo.frame.origin.x, self.requestPostButton.frame.origin.y, self.spotInfo.frame.size.width, self.requestPostButton.frame.size.height)];
-        [self.requestPostButton setTitle:@"CANCEL REQUEST" forState:UIControlStateNormal];
+        [self.requestPostButton setTitle:@"ΑΚΥΡΩΣΕ ΤΗΝ ΑΙΤΗΣΗ" forState:UIControlStateNormal];
     } else {
         [self.requestPostButton setFrame:CGRectMake(self.spotInfo.frame.origin.x, self.requestPostButton.frame.origin.y, self.spotInfo.frame.size.width, self.requestPostButton.frame.size.height)];
-        [self.requestPostButton setTitle:@"REQUEST NOW" forState:UIControlStateNormal];
+        [self.requestPostButton setTitle:@"ΖΗΤΑ ΤΩΡΑ" forState:UIControlStateNormal];
     }
     
     if(annotation.status > 0){
@@ -2545,7 +2545,7 @@
     } else {
         
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Enable Location Services"
-                                                        message:@"To use OPA, location services must be enabled within Settings"
+                                                        message:@"Για να δουλέψει το ΟΠΑ πρέπει ανάψεις τις γεωγραφικές υπηρεσίες στις Ρυθμίσεις"
                                                        delegate:self
                                               cancelButtonTitle:@"OK"
                                               otherButtonTitles:nil];
@@ -3016,7 +3016,7 @@
                  
              } else {
                  
-                 [self customAlert:@"Unable to begin posting process" withDone:@"OK" withColor:YES withTag:0];
+                 [self customAlert:@"Δεν μπορέσαμε να ξεκινήσουμε την διαδικασία" withDone:@"OK" withColor:YES withTag:0];
                  
              }
              

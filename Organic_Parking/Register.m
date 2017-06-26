@@ -81,22 +81,22 @@
     //check that all input fields aren't empty
     if([[self.username.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] length]==0) {
         
-        [self customAlert:@"Please enter a username before continuing" withDone:@"OK" withTag:0];
+        [self customAlert:@"Παρακαλώ βάλε το όνομα σου πριν συνεχίσεις" withDone:@"OK" withTag:0];
         return false;
         
     } else if ([[self.email.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] length]==0) {
         
-        [self customAlert:@"Please enter an email before continuing" withDone:@"OK" withTag:0];
+        [self customAlert:@"Παρακαλώ βάλε την ηλεκτρονική σου διεύθυνση πριν συνεχίσεις" withDone:@"OK" withTag:0];
         return false;
         
     } else if ([[self.password.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] length]==0) {
         
-        [self customAlert:@"Please enter a password before continuing" withDone:@"OK" withTag:0];
+        [self customAlert:@"Παρακαλώ βάλε ένα συθηματικό πριν συνεχίσεις" withDone:@"OK" withTag:0];
         return false;
         
     }
     else if([self.username.text isEqualToString:@"0"] ){
-        [self customAlert:@"Please use another username.  \n0 is a reserved name" withDone:@"OK" withTag:0];
+        [self customAlert:@"Παρακαλώ βάλε άλλο όνομα.  \n0 χρησιμοποιείται ήδη" withDone:@"OK" withTag:0];
         return false;
     }
     
@@ -156,7 +156,7 @@
                       
                   } else {
                       
-                      [self customAlert:@"We were unable to create your account" withDone:@"OK" withTag:0];
+                      [self customAlert:@"Δεν μπορέσαμε να σου φτιάξουμε λογαριασμό" withDone:@"OK" withTag:0];
                       
                   }
                   

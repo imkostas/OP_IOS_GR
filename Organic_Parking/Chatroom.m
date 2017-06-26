@@ -477,7 +477,7 @@
                       
                   } else {
                       
-                      [self customAlert:@"We were unable to send your message" withDone:@"OK"];
+                      [self customAlert:@"Δεν μπορέσαμε να στείλουμε το μήνυμα σου" withDone:@"OK"];
                       
                   }
                   
