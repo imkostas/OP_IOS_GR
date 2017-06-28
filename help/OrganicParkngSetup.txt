@@ -1,0 +1,84 @@
+BACKEND
+
+Create /var/www/html/api/1.0.0
+
+Copy .htaccess and op_functions.php in it
+
+Create new <Directory "/var/www/html/api/1.0.0"> clause in httd.conf
+and add "AllowOverride All" to it.
+
+Restart apache
+
+Edit cron by typing "crontab -e" from the command line and add the following lines
+
+	MAILTO="austinstapley@gmail.com"
+	
+	* * * * * php /home/admin/crontab/delete_expired_posts.php
+	*/10 * * * * /home/admin/crontab/unread_message_notifications.sh $> /dev/null
+	0 * * * * php /home/admin/crontab/archive_posts.php
+
+Create folder /var/www/html/op_profile_images
+
+
+
+ANDROID
+
+Log in to Google Developer console, and enable the Maps API and the Places API.
+
+Then general Public API access keys. Create 2 server keys and 1 Android application key
+
+Replace key in string.xml for the places API (first server key)
+
+Replace key in google_maps_api.xml (Android application key)
+
+Replace the server urls in strings.xml (api_uri and image_uri)
+
+For each developer,
+- Execute keytool -list -v -keystore ~/.android/debug.keystore -alias androiddebugkey -storepass android -keypass android 
+  (http://stackoverflow.com/questions/15727912/sha-1-fingerprint-of-keystore-certificate)
+- Open the Google developer console, select organic parking, Api & auth, Credentials and
+  add the SHA1 generated to the "Key for Android applications"
+
+
+IPHONE
+
+In the Apple developer website open certificates,
+Register iPad/iPhone by getting UDID using iTunes
+Register AppID using the bundle ID from Xcode
+Select push notifications in AppServices
+
+Open Keychain Access (type "keychain" in the launchpad), the from the menu go to Certificate Assistant -> Request certificate from authority
+Save certificate to disk
+Within the Apple developer website, create iOS App Development certificate 
+Select saved certificate
+Download certificate to disk
+Then execute the certificate to import it to keychain (it should show in "My certificates" in keychain access)
+
+Go to provisioning profiles and choose manually generate
+Choose certificate, device ...
+Download profile to disk
+Execute profile (it should be imported to Xcode)
+
+In Xcode, go to Build setting and replace all Code signing and provisioning profiles entities with the newly created one
+(it is good to use several profiles for debug/production)
+From the top of the screen you can now select the devices registered earlier.
+
+Open Keychain Access (type "keychain" in the launchpad), the from the menu go to Certificate Assistant -> Request certificate from authority
+Save certificate to disk (use different name than before)
+Within the Apple developer website, go back to App ID, select the app, Edit, Create Push notification certificate
+Select the CSR file you just created
+Download certificate to disk
+Then execute the certificate to import it to keychain (it should show in "My certificates" in keychain access)
+Open Keys in keychain and export p12 key
+Open terminal and follow instruction from page http://www.raywenderlich.com/32960/apple-push-notification-services-in-ios-6-tutorial-part-1
+(from "Making a PEM file")
+Copy the last generated pem file to the server
+Edit globals.php (PUSH_CERT and PUSH_PASSPHRASE)
+
+
+
+
+// TO DO
+Check location is enabled
+Check that the payment has been set up before allowing posting ad
+get a localytics key

@@ -13,6 +13,7 @@
 		31622FD417AAA65200E3E425 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31622FD317AAA65200E3E425 /* SystemConfiguration.framework */; };
 		317771771EE0A2DF006DC7F0 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 317771761EE0A2DF006DC7F0 /* libsqlite3.dylib */; };
 		317771791EE0A2F5006DC7F0 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 317771781EE0A2F5006DC7F0 /* libz.1.dylib */; };
+		39EAD91002E40C8D884A9785 /* libPods-OPA.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0532AD5010826FAF2D7C708 /* libPods-OPA.a */; };
 		4905FAAE1A1E8DB6009A9B9A /* DetailPaymentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4905FAAD1A1E8DB6009A9B9A /* DetailPaymentCell.m */; };
 		4905FAB11A1E8DD2009A9B9A /* AddPaymentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4905FAB01A1E8DD2009A9B9A /* AddPaymentCell.m */; };
 		4905FAB41A1EF475009A9B9A /* PaymentMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 4905FAB31A1EF475009A9B9A /* PaymentMethod.m */; };
@@ -148,14 +149,14 @@
 		495DA0A21A4103740054C72B /* DateFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateFilter.m; sourceTree = "<group>"; };
 		496068F9193AE8ED001BC25C /* SearchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchCell.h; sourceTree = "<group>"; };
 		496068FA193AE8ED001BC25C /* SearchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchCell.m; sourceTree = "<group>"; };
-		496590921785193E00287B3C /* ΟΠΑ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ΟΠΑ.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		496590921785193E00287B3C /* OPA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OPA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		496590951785193E00287B3C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		496590971785193E00287B3C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		496590991785193E00287B3C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		4965909D1785193E00287B3C /* ΟΠΑ-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ΟΠΑ-Info.plist"; sourceTree = "<group>"; };
+		4965909D1785193E00287B3C /* OPA-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OPA-Info.plist"; sourceTree = "<group>"; };
 		4965909F1785193E00287B3C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		496590A11785193E00287B3C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		496590A31785193E00287B3C /* ΟΠΑ-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ΟΠΑ-Prefix.pch"; sourceTree = "<group>"; };
+		496590A31785193E00287B3C /* OPA-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OPA-Prefix.pch"; sourceTree = "<group>"; };
 		496590A41785193E00287B3C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		496590A51785193E00287B3C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		496590AE1785193E00287B3C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
@@ -230,9 +231,9 @@
 		49F8BF41191C1AC500E96A70 /* todos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = todos.m; sourceTree = "<group>"; };
 		49FC13FA1A7C0816005D9375 /* DetailPaymentExpiredCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailPaymentExpiredCell.h; sourceTree = "<group>"; };
 		49FC13FB1A7C0816005D9375 /* DetailPaymentExpiredCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailPaymentExpiredCell.m; sourceTree = "<group>"; };
-		8A3EFFE6E3055605AE1B4D2E /* libPods-Parking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Parking.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BB58F041A2D5ACC009724FC /* TermsPrivacy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TermsPrivacy.h; sourceTree = "<group>"; };
 		8BB58F051A2D5ACC009724FC /* TermsPrivacy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TermsPrivacy.m; sourceTree = "<group>"; };
+		B0532AD5010826FAF2D7C708 /* libPods-OPA.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OPA.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFAC047F34AD57C292545A3E /* Pods-OPA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OPA.release.xcconfig"; path = "Pods/Target Support Files/Pods-OPA/Pods-OPA.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -261,6 +262,7 @@
 				49E1C94017985D9B000FBFEC /* AddressBook.framework in Frameworks */,
 				491A942617908FD400DB811F /* CoreLocation.framework in Frameworks */,
 				496590961785193E00287B3C /* UIKit.framework in Frameworks */,
+				39EAD91002E40C8D884A9785 /* libPods-OPA.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,7 +424,7 @@
 		496590931785193E00287B3C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				496590921785193E00287B3C /* ΟΠΑ.app */,
+				496590921785193E00287B3C /* OPA.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -450,7 +452,7 @@
 				496590951785193E00287B3C /* UIKit.framework */,
 				496590971785193E00287B3C /* Foundation.framework */,
 				496590991785193E00287B3C /* CoreGraphics.framework */,
-				8A3EFFE6E3055605AE1B4D2E /* libPods-Parking.a */,
+				B0532AD5010826FAF2D7C708 /* libPods-OPA.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -495,10 +497,10 @@
 			children = (
 				4922772119F5610200A7AADC /* Definitions.h */,
 				49A58E0619116D22008EE6A8 /* faqs.plist */,
-				4965909D1785193E00287B3C /* ΟΠΑ-Info.plist */,
+				4965909D1785193E00287B3C /* OPA-Info.plist */,
 				4965909E1785193E00287B3C /* InfoPlist.strings */,
 				496590A11785193E00287B3C /* main.m */,
-				496590A31785193E00287B3C /* ΟΠΑ-Prefix.pch */,
+				496590A31785193E00287B3C /* OPA-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -741,9 +743,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		496590911785193E00287B3C /* ΟΠΑ */ = {
+		496590911785193E00287B3C /* OPA */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 496590B51785193E00287B3C /* Build configuration list for PBXNativeTarget "ΟΠΑ" */;
+			buildConfigurationList = 496590B51785193E00287B3C /* Build configuration list for PBXNativeTarget "OPA" */;
 			buildPhases = (
 				3FD3DA69B650D5D83E2D6D4D /* [CP] Check Pods Manifest.lock */,
 				4965908E1785193E00287B3C /* Sources */,
@@ -756,9 +758,9 @@
 			);
 			dependencies = (
 			);
-			name = "ΟΠΑ";
+			name = OPA;
 			productName = OPPannig;
-			productReference = 496590921785193E00287B3C /* ΟΠΑ.app */;
+			productReference = 496590921785193E00287B3C /* OPA.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -790,7 +792,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4965908D1785193E00287B3C /* Build configuration list for PBXProject "ΟΠΑ" */;
+			buildConfigurationList = 4965908D1785193E00287B3C /* Build configuration list for PBXProject "OPA" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -802,7 +804,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				496590911785193E00287B3C /* ΟΠΑ */,
+				496590911785193E00287B3C /* OPA */,
 			);
 		};
 /* End PBXProject section */
@@ -1056,16 +1058,29 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Organic_Parking/ΟΠΑ-Prefix.pch";
-				INFOPLIST_FILE = "Organic_Parking/ΟΠΑ-Info.plist";
+				GCC_PREFIX_HEADER = "Organic_Parking/OPA-Prefix.pch";
+				INFOPLIST_FILE = "Organic_Parking/OPA-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(PODS_ROOT)/Localytics/Localytics-iOS-3.8.0\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Braintree\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/MBProgressHUD\"",
+					"$(inherited)",
+					"\"${PODS_ROOT}/Braintree/Braintree/PayPal/mSDK\"",
+					"$(inherited)",
+					"\"${PODS_ROOT}/CardIO/CardIO\"",
+					"$(inherited)",
+					"\"${PODS_ROOT}/Localytics/Localytics-iOS-3.8.0\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/AFNetworking\"",
+				);
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.imkostas.opa;
-				PRODUCT_NAME = "ΟΠΑ";
+				PRODUCT_NAME = OPA;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
@@ -1093,16 +1108,29 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Organic_Parking/ΟΠΑ-Prefix.pch";
-				INFOPLIST_FILE = "Organic_Parking/ΟΠΑ-Info.plist";
+				GCC_PREFIX_HEADER = "Organic_Parking/OPA-Prefix.pch";
+				INFOPLIST_FILE = "Organic_Parking/OPA-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(PODS_ROOT)/Localytics/Localytics-iOS-3.8.0\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Braintree\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/MBProgressHUD\"",
+					"$(inherited)",
+					"\"${PODS_ROOT}/Braintree/Braintree/PayPal/mSDK\"",
+					"$(inherited)",
+					"\"${PODS_ROOT}/CardIO/CardIO\"",
+					"$(inherited)",
+					"\"${PODS_ROOT}/Localytics/Localytics-iOS-3.8.0\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/AFNetworking\"",
+				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.imkostas.opa;
-				PRODUCT_NAME = "ΟΠΑ";
+				PRODUCT_NAME = OPA;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
@@ -1114,7 +1142,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4965908D1785193E00287B3C /* Build configuration list for PBXProject "ΟΠΑ" */ = {
+		4965908D1785193E00287B3C /* Build configuration list for PBXProject "OPA" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				496590B31785193E00287B3C /* Debug */,
@@ -1123,7 +1151,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		496590B51785193E00287B3C /* Build configuration list for PBXNativeTarget "ΟΠΑ" */ = {
+		496590B51785193E00287B3C /* Build configuration list for PBXNativeTarget "OPA" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				496590B61785193E00287B3C /* Debug */,
