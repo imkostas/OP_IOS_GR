@@ -68,7 +68,7 @@
     //check that the username entered isn't empty
     if([[self.recoverText.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] length]==0){
         
-        [self customAlert:@"Το όνομα σου χρειάζεται γιά να αλλάξουμε το συνθηματικό σου" withDone:@"OK" withTag:0];
+        [self customAlert:@"Το όνομα σου χρειάζεται γιά να αλλάξουμε το σύνθημα σου" withDone:@"OK" withTag:0];
         return false;
         
     }
@@ -122,7 +122,7 @@
                      
                  } else {
                      
-                     [self customAlert:@"Δεν μπορέσαμε να ανακτήσουμε το συνθηματικό σου" withDone:@"Ξανά" withTag:0];
+                     [self customAlert:@"Δεν μπορέσαμε να ανακτήσουμε το σύνθημα σου" withDone:@"Ξανά" withTag:0];
                      
                  }
                  

@@ -296,7 +296,7 @@
         mailView.mailComposeDelegate = self;
         [mailView setSubject:@"OPA Feedback"];
         [mailView setMessageBody:@"" isHTML:NO];
-        [mailView setToRecipients:[NSArray arrayWithObject:@"support@organicparking.com"]];
+        [mailView setToRecipients:[NSArray arrayWithObject:@"support@opaopaopa.com"]];
         
         [self presentViewController:mailView animated:YES completion:NULL];
         

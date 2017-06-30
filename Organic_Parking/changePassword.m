@@ -180,7 +180,7 @@
             [self.user.keychain setObject:[responseObject valueForKey:@"hash"] forKey:(__bridge id)(kSecValueData)];
             
             //notify user their password has been changed
-            [self customAlert:@"Αλλάξαμε το συνθηματικό σου" withDone:@"OK"];
+            [self customAlert:@"Αλλάξαμε το σύνθημα σου" withDone:@"OK"];
             [self.customAlert setTag:1];
             
         } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
@@ -197,7 +197,7 @@
                 
             } else {
                 
-                [self customAlert:@"Δεν μπορέσαμε να αλλάξουμε το συνθηματικό σου" withDone:@"OK"];
+                [self customAlert:@"Δεν μπορέσαμε να αλλάξουμε το σύνθημα σου" withDone:@"OK"];
                 
             }
             
@@ -212,22 +212,22 @@
     //check that current password not empty, both new passwords not empty, and that new passwords match
     if([[self.currentPassword.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet] ] length]==0) {
         
-        [self customAlert:@"Παρακαλώ βάλε το παλιό συνθηματικό πριν προχωρήσεις" withDone:@"OK"];
+        [self customAlert:@"Παρακαλώ βάλε το παλιό σύνθημα πριν προχωρήσεις" withDone:@"OK"];
         return false;
         
     } else if ([[self.profilePasswordNew.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet] ] length]==0) {
         
-        [self customAlert:@"Παρακαλώ βάλε το νέο συνθηματικό πριν προχωρήσεις" withDone:@"OK"];
+        [self customAlert:@"Παρακαλώ βάλε το νέο σύνθημα πριν προχωρήσεις" withDone:@"OK"];
         return false;
         
     } else if ([[self.confirmProfilePassword.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet] ] length]==0) {
         
-        [self customAlert:@"Παρακαλώ επιβεβαίωσε το νέο συνθηματικό πριν προχωρήσεις" withDone:@"OK"];
+        [self customAlert:@"Παρακαλώ επιβεβαίωσε το νέο σύνθημα πριν προχωρήσεις" withDone:@"OK"];
         return false;
         
     } else if(![self.profilePasswordNew.text isEqualToString:self.confirmProfilePassword.text]){
         
-        [self customAlert:@"Τα δύο νέα συνθηματικά δεν ταιριάζουν" withDone:@"OK"];
+        [self customAlert:@"Τα δύο νέα συνθήματα δεν ταιριάζουν" withDone:@"OK"];
         return false;
         
     }
